@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="meta description">
+		<!-- Site title -->
+		<title>时尚丽人</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font-Awesome CSS -->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<!-- IonIcon CSS -->
+		<link href="assets/css/ionicons.min.css" rel="stylesheet">
+		<!-- helper class css -->
+		<link href="assets/css/helper.min.css" rel="stylesheet">
+		<!-- Plugins CSS -->
+		<link href="assets/css/plugins.css" rel="stylesheet">
+		<!-- Main Style CSS -->
+		<link href="assets/css/style.css" rel="stylesheet">
+
+		<!-- Jquery Min Js -->
+		<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/my-account.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+	</head>
+
+	<body>
+		<!-- header area start -->
+		<header>
+			<!-- main menu area start -->
+			<div class="header-main sticky">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="logo">
+								<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 d-none d-lg-block">
+							<div class="main-header-inner">
+								<div class="main-menu">
+									<nav id="mobile-menu">
+										<ul>
+											<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">时尚美妆</a></li>
+													<li><a href="index-2.html">精品女装</a></li>
+													<li><a href="index-3.html">高档首饰</a></li>
+													<li><a href="index-4.html">潮流女包</a></li>
+												</ul>
+											</li>
+											<li class="static"><a href="#">服务<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="cart.html">购物车</a></li>
+													<li><a href="my-account.html">订单支付</a></li>
+													<li><a href="wishlist.html">愿望清单</a></li>
+													<li><a href="my-account.html">我的账户</a></li>
+												</ul>
+											</li>
+											<li><a href="#">淘货<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="shop-grid-left-sidebar.html">店铺---左侧栏</a></li>
+													<li><a href="shop-grid-right-sidebar.html">店铺---右侧栏</a></li>
+													<li><a href="shop-grid-full-width.html">店铺全宽</a></li>
+												</ul>
+											</li>
+											<li><a href="contact-us.html">联系我们</a></li>
+											<li><a href="about-us.html">关于我们</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-6 ml-auto">
+							<div class="header-setting-option">
+								<div class="search-wrap">
+									<button type="submit" class="search-trigger">
+										<i class="ion-ios-search-strong"></i>
+									</button>
+								</div>
+								<div class="header-mini-cart">
+									<div class="mini-cart-btn">
+										<i class="ion-bag"></i> <span class="cart-notification">2</span>
+									</div>
+									<ul class="cart-list">
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">simple product 09</a>
+												</h4>
+												<span>$60.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">virtual product 10</a>
+												</h4>
+												<span>$50.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li class="mini-cart-price"><span class="subtotal">subtotal
+												: </span> <span class="subtotal-price ml-auto">$110.00</span></li>
+										<li class="checkout-btn"><a href="#">checkout</a></li>
+									</ul>
+								</div>
+								<div class="settings-top">
+									<div class="settings-btn">
+										<i class="ion-android-settings"></i>
+									</div>
+									<ul class="settings-list">
+										<li><span id="nickname"></span><span id="faceid"> </span>---欢迎您！
+											<ul>
+												<li><a href="my-account.html">我的账户</a></li>
+												<li><a href="login.html">登录</a></li>
+												<li id="exit"><a href="login.html">退出</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-block d-lg-none">
+							<div class="mobile-menu">
+								<a href="#">
+									<li><span id="opt" style="color: #df1f26; font-weight: bold;"></span>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您！</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main menu area end -->
+
+			<!-- Start Search Popup -->
+			<div class="box-search-content search_active block-bg close__top">
+				<form class="minisearch" action="#">
+					<div class="field__search">
+						<input type="text" placeholder="Search Our Catalog">
+						<div class="action">
+							<a href="#"><i class="fa fa-search"></i></a> <img src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+						</div>
+					</div>
+				</form>
+				<div class="close__wrap">
+					<span>close</span>
+				</div>
+			</div>
+			<!-- End Search Popup -->
+
+		</header>
+		<!-- header area end -->
+
+		<!-- breadcrumb area start -->
+		<div class="breadcrumb-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="breadcrumb-wrap">
+							<nav aria-label="breadcrumb">
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+									<li class="breadcrumb-item active" aria-current="page">我的账户</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- breadcrumb area end -->
+
+		<!-- page main wrapper start -->
+		<main>
+			<!-- my account wrapper start -->
+			<div class="my-account-wrapper pt-100 pb-100 pt-sm-58 pb-sm-58">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<!-- My Account Page Start -->
+							<div class="myaccount-page-wrapper">
+								<!-- My Account Tab Menu Start -->
+								<div class="row">
+									<div class="col-lg-3 col-md-4">
+										<div class="myaccount-tab-menu nav" role="tablist">
+											<a href="#dashboad" class="active" data-toggle="tab"><i class="fa fa-dashboard"></i> 最近消费</a>
+											<a id="ordersBtn_orders" href="#orders" data-toggle="tab"><i class="fa fa-cart-arrow-down"></i> 订单</a>
+											<a href="#payment-method" data-toggle="tab"><i class="fa fa-credit-card"></i>付款方法</a>
+											<a href="#address-edit" id="Shippingaddress" data-toggle="tab"><i class="fa fa-map-marker"></i> 收货地址</a>
+											<a href="#account-info" data-toggle="tab" id="account _details"><i class="fa fa-user"></i><button id="selectInfos"
+												 type="button">账户详情资料</button></a>
+											<a href="login.html"><i class="fa fa-sign-out"></i> 退出 </a>
+										</div>
+									</div>
+									<!-- My Account Tab Menu End -->
+
+									<!-- My Account Tab Content Start -->
+									<div class="col-lg-9 col-md-8">
+										<div class="tab-content" id="myaccountContent">
+											<!-- Single Tab Content Start -->
+											<div class="tab-pane fade show active" id="dashboad" role="tabpanel">
+												<div class="myaccount-content">
+													<h3>本年的消费报告</h3>
+													<div class="welcome" id="chart" style="width: 600px; height: 400px;">
+													</div>
+												</div>
+											</div>
+											<!-- Single Tab Content End -->
+
+											<!-- Single Tab Content Start -->
+											<div class="tab-pane fade" id="orders" role="tabpanel">
+												<div class="myaccount-content">
+													<h3>订单详情</h3>
+													<div class="myaccount-table table-responsive text-center">
+														<table class="table table-bordered">
+															<thead class="thead-light">
+																<tr>
+																	<th>订单编号</th>
+																	<th>日期</th>
+																	<th>状态</th>
+																	<th>总额<th>
+																</tr>
+															</thead>
+															<tbody id="dingdanbody">
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<!-- Single Tab Content End -->
+
+											<!-- Single Tab Content Start -->
+											<div class="tab-pane fade" id="payment-method" role="tabpanel">
+												<div class="myaccount-content">
+													<h3>付款方法</h3>
+													<p class="saved-message">支付宝支付...</p>
+												</div>
+											</div>
+											<!-- Single Tab Content End -->
+
+											<!-- Single Tab Content Start-->
+											<div class="tab-pane fade" id="address-edit" role="tabpanel">
+												<h3>收货地址</h3>
+												<div class="myaccount-content" role="tabpanel">
+													<a class="check-btn sqr-btn " id="editAddress"><i class="fa fa-edit"></i>新增地址</a>
+													<div class="myaccount-table table-responsive text-center">
+														<table class="table table-bordered">
+															<thead class="thead-light">
+																<tr>
+																	<th hidden="hidden">ID</th>
+																	<th>收货人姓名</th>
+																	<th>收货人地址</th>
+																	<th>收货人电话</th>
+																	<th>操作</th>
+																</tr>
+															</thead>
+															<tbody id="myaccount-content">
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div class="editAddressForm1" id="" style="display: none">
+												<form method="post">
+													<input hidden="hidden" id="user_id" placeholder="当前用户的id" value="">
+													<div class="single-input-item">
+														<input type="text" id="nickname1" name="nickname" placeholder="收货人的名称" required />
+													</div>
+													<div class="single-input-item">
+														<input type="text" id="phone1" name="phone" placeholder="收货人的电话" required />
+													</div>
+													<div class="single-input-item">
+														<input type="text" id="address1" name="address" readonly="readonly" placeholder="收货人的地址，点击显示百度地图选择地址"
+														 required />
+													</div>
+													<span hidden="hidden" id="user_id_client"></span>
+													<div class="single-input-item">
+														<button class="sqr-btn" type="button" id="saveAddress">添加</button>
+													</div>
+												</form>
+											</div>
+											<div class="editAddressForm2" id="" style="display: none">
+												<form method="post">
+													<input hidden="hidden" id="user_id" placeholder="当前用户的id" value="">
+													<div class="single-input-item">
+														<input type="text" id="nickname2" name="nickname" placeholder="收货人的名称" required />
+													</div>
+													<div class="single-input-item">
+														<input type="text" id="phone2" name="phone" placeholder="收货人的电话" required />
+													</div>
+													<div class="single-input-item">
+														<input type="text" id="address2" name="address" readonly="readonly" placeholder="收货人的地址，点击显示百度地图选择地址"
+														 required />
+													</div>
+													<span hidden="hidden" id="user_id_client"></span>
+													<div class="single-input-item">
+														<button class="sqr-btn" type="button" id="updateAddres">修改</button>
+													</div>
+												</form>
+											</div>
+											<div class="map" style="display: none">
+												<style type="text/css">
+													body,
+													html {
+														width: 100%;
+														height: 100%;
+														margin: 0;
+														font-family: "微软雅黑";
+														font-size: 14px;
+													}
+
+													#container {
+														height: 650px;
+														width: 100%;
+													}
+
+													#r-result {
+														width: 100%;
+													}
+
+													.tangram-suggestion-main {
+														z-index: 9999999999;
+													}
+												</style>
+												<div id="r-result" align="center" class="single-input-item"></div>
+												<div><input style="width: 480px;height: 100px;" type="text" id="suggestId" size="20" value="" placeholder="搜索地点" /></div>
+												<div id="searchResultPanel" style="border:1px solid rgb(128, 95, 95);width:150px;height:auto; display:none;"></div>
+												<div class="">
+													<input type="text" id="cityName" value="" hidden="hidden" readonly="readonly" placeholder="请输入地址" />
+												</div>
+												<div id="container" style="width: 1024px; height: 480px;"></div>
+												<script type="text/javascript">
+													function G(id) {
+														return document.getElementById(id);
+													}
+													var map = new BMap.Map("container");
+													// 初始化地图,设置城市和地图级别。
+													map.centerAndZoom("北京", 12);
+													map.addControl(new BMap.OverviewMapControl()); //添加控件：地图的缩略图的控件，默认在右下方； TrafficControl
+													map.addControl(new BMap.MapTypeControl()); //添加控件：地图类型控件，默认在右上方；
+													map.enableScrollWheelZoom(); //激活滚轮调整大小功能
+													//建立一个自动完成的对象
+													var ac = new BMap.Autocomplete({
+														"input": "suggestId",
+														"location": map
+													});
+													//鼠标放在下拉列表上的事件
+													ac.addEventListener("onhighlight", function(e) {
+														var str = "";
+														var _value = e.fromitem.value;
+														var value = "";
+														if (e.fromitem.index > -1) {
+															value = _value.province + _value.city + _value.district + _value.street + _value.business;
+														}
+														str = "FromItem<br />index = " + e.fromitem.index + "<br />value = " + value;
+
+														value = "";
+														if (e.toitem.index > -1) {
+															_value = e.toitem.value;
+															value = _value.province + _value.city + _value.district + _value.street + _value.business;
+														}
+														str += "<br />ToItem<br />index = " + e.toitem.index + "<br />value = " + value;
+														G("searchResultPanel").innerHTML = str;
+													});
+
+													var myValue;
+													//鼠标点击下拉列表后的事件
+													ac.addEventListener("onconfirm", function(e) {
+														var _value = e.item.value;
+														myValue = _value.province + _value.city + _value.district + _value.street + _value.business;
+														G("searchResultPanel").innerHTML = "onconfirm<br />index = " + e.item.index + "<br />myValue = " +
+															myValue;
+
+														setPlace();
+													});
+
+													function setPlace() {
+														//清除地图上所有覆盖物
+														map.clearOverlays();
+
+														function myFun() {
+															//获取第一个智能搜索的结果
+															var pp = local.getResults().getPoi(0).point;
+															// 获取搜索结果的详细地址
+															//window.alert(local.getResults().getPoi(0).address)
+															let address = local.getResults().getPoi(0).address;
+															// 将获取到的地址填充到表单
+															window.document.getElementById("address1").value = address
+															window.document.getElementById("address2").value = address
+															map.centerAndZoom(pp, 18);
+															//添加标注
+															map.addOverlay(new BMap.Marker(pp));
+														}
+														//智能搜索
+														var local = new BMap.LocalSearch(map, {
+															onSearchComplete: myFun
+														});
+														local.search(myValue);
+													}
+												</script>
+											</div>
+
+											<!-- Single Tab Content End -->
+
+											<!-- Single Tab Content Start -->
+											<div class="tab-pane fade" id="account-info" role="tabpanel">
+												<div class="myaccount-content">
+													<h3>帐户详细资料</h3>
+													<div class="account-details-form">
+														<form id="userInfosForm" method="post">
+															<!-- 隐藏的id -->
+															<input type="hidden" id="id" name="id" placeholder="id" />
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="single-input-item">
+																		<label for="nickname" class="required">姓名</label>
+																		<input type="text" id="infosnickname" name="infosnickname" placeholder="姓名" />
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="single-input-item">
+																		<label for="last-name" class="required">性别</label>
+																		<input type="text" id="sex" name="sex" placeholder="姓别" />
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="single-input-item">
+																		<label for="display-name" class="required">账户名称</label>
+																		<input type="text" id="account" name="account" placeholder="账户名称" />
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="single-input-item">
+																		<label for="email" class="required">邮箱</label>
+																		<input type="email" id="email" name="email" placeholder="邮箱" />
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="single-input-item">
+																		<label for="infosphone" class="required">绑定手机</label>
+																		<input type="text" id="infosphone" name="infosphone" placeholder="绑定手机" />
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="single-input-item">
+																		<label for="infosaddress" class="required">地址</label>
+																		<input type="text" id="infosaddress" name="infosaddress" placeholder="地址" />
+																	</div>
+																</div>
+															</div>
+															<fieldset>
+																<legend>密码变更</legend>
+																<div class="single-input-item">
+																	<label for="current-pwd" class="required">当前密码</label>
+																	<input type="password" id="current-pwd" name="current-pwd" placeholder="当前密码" readonly="readonly" />
+																</div>
+																<div class="row">
+																	<div class="col-lg-6">
+																		<div class="single-input-item">
+																			<label for="new-pwd" class="required">新密码</label>
+																			<input type="password" id="new-pwd" name="new-pwd" placeholder="新密码" />
+																		</div>
+																	</div>
+																	<div class="col-lg-6">
+																		<div class="single-input-item">
+																			<label for="confirm-pwd" class="required">确认密码</label>
+																			<input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="确认密码" />
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+															<div class="single-input-item">
+																<button class="check-btn sqr-btn " type="button" id="updateBtn">保存更改</button>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+											<!-- Single Tab Content End -->
+										</div>
+									</div>
+									<!-- My Account Tab Content End -->
+								</div>
+							</div>
+							<!-- My Account Page End -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- my account wrapper end -->
+		</main>
+		<!-- page main wrapper end -->
+
+		<!-- footer area start -->
+		<footer>
+			<script>
+				$("footer").load("footer.html");
+			</script>
+		</footer>
+		<!-- footer area end -->
+
+		<!-- Scroll to top start -->
+		<div class="scroll-top not-visible">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<!-- Scroll to Top End -->
+
+		<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+		<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+		<!-- Popper Min Js -->
+		<script src="assets/js/vendor/popper.min.js"></script>
+		<!-- Bootstrap Min Js -->
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<!-- Plugins Js-->
+		<script src="assets/js/plugins.js"></script>
+		<!-- Ajax Mail Js -->
+		<script src="assets/js/ajax-mail.js"></script>
+		<!-- Active Js -->
+		<script src="assets/js/main.js"></script>
+		<script>
+			
+		</script>
+		<script src="assets/js/exit.js"></script>
+		<script src="assets/js/common.js"></script>
+		<script src="assets/js/echarts.js"></script>
+		<script type="text/javascript">
+			let userString = sessionStorage.getItem("user")
+			let newuser = JSON.parse(userString);
+			$("#Shippingaddress").click(function() {
+				selectDeliveryInformation(newuser.id);
+			});
+			$("#editAddress").click(function(e) {
+				$(".editAddressForm1").toggle();
+				$(".editAddressForm2").hide();
+			});
+			$("#address1").focus(function(e) {
+				$(".map").toggle();
+			});
+			$("#address2").focus(function(e) {
+				$(".map").toggle();
+			});
+			$("#saveAddress").click(function() {
+				let nickname = $("#nickname1").val()
+				let phone = $("#phone1").val()
+				let address = $("#address1").val()
+				if (nickname.trim() == "" || nickname == null) {
+					alert("收货人的姓名不能为空!!!");
+				} else if (phone.trim() == "" || phone == null) {
+					alert("收货人的电话不能为空!!!");
+				} else if (address.trim() == "" || address == null) {
+					alert("收货人的地址不能为空!!!");
+				} else {
+					$.ajax({
+						url: "/FashionGirl/serveltAction.action?methodName=addDeliveryInformation",
+						type: "post",
+						dataType: "json",
+						data: {
+							user_id: newuser.id,
+							nickname: nickname,
+							phone: phone,
+							address: address
+						},
+						success: function(DeliveryInformation) {
+							$.each(DeliveryInformation.data, function(index, DeliveryInformation) {
+								$("#user_address").text(DeliveryInformation.address)
+								$("#user_name").text(DeliveryInformation.nickname)
+								$("#user_phone").text(DeliveryInformation.phone)
+							})
+							$(".editAddressForm1").hide();
+							$(".map").hide();
+							alert("保存成功！");
+							selectDeliveryInformation();
+						},
+						error: function() {
+
+						}
+					})
+				}
+			});
+			//查询该用户所有的地址信息，动态填充
+			function selectDeliveryInformation(index) {
+				$.ajax({
+					url: "/FashionGirl/serveltAction.action?methodName=selectDeliveryInformation",
+					type: "post",
+					dataType: "json",
+					data: {
+						user_id: newuser.id
+					},
+					success: function(DeliveryInformation) {
+						if(DeliveryInformation.status=="success"){
+							let address = "";
+							$.each(DeliveryInformation.data, function(index, DeliveryInformation) {
+								address += '<tr>' +
+									'<address id="addressId">' +
+									'<p>' + '<strong' + 'id="user_idbtn1' + DeliveryInformation.id + '" hidden="hidden">' +
+									DeliveryInformation.id + '</strong></p>' +
+									'<td>' + '<strong id="user_name">' + DeliveryInformation.nickname + '</strong></td>' +
+									'<td id="user_address">' + DeliveryInformation.address + '</td>' +
+									'<td id="user_phone">' + DeliveryInformation.phone + '</td>' +
+									'</address>' +
+									'<td>' +
+									'<a class="check-btn sqr-btn" id="update' + DeliveryInformation.id + '" onclick="update(' +
+									DeliveryInformation.id + ')"><i class="fa fa-edit"></i>修改</a>' +
+									'<button class="check-btn sqr-btn" onclick="deleteaaa(' + DeliveryInformation.id +
+									')"><i class="fa fa-edit"></i>删除</button>' +
+									'</td>' +
+									'</tr>'
+							})
+							$("#myaccount-content").html(address);
+						}else{
+							alert("您没有添加过收货地址，请添加一个！");
+						}
+					},
+					error: function() {
+					}
+				})
+			};
+
+			function update(index) {
+				$(".editAddressForm1").hide();
+				$(".editAddressForm2").toggle();
+				$.ajax({
+					async: false,
+					url: "/FashionGirl/serveltAction.action?methodName=selectDeliveryInformationByid",
+					type: "post",
+					dataType: "json",
+					data: {
+						index
+					},
+					success: function(DeliveryInformation) {
+						console.log(DeliveryInformation.data)
+						$.each(DeliveryInformation.data, function(index, DeliveryInformation) {
+							console.log(DeliveryInformation.id)
+							$("#user_id_client").text(DeliveryInformation.id);
+							//清空文本框内的值
+							$(this).val("");
+							//赋值
+							$("#nickname2").val(DeliveryInformation.nickname);
+							$("#address2").val(DeliveryInformation.address);
+							$("#phone2").val(innerText = DeliveryInformation.phone);
+						})
+						$("#updateAddres").click(function() {
+							let id = $("#user_id_client").text();
+							let nickname2 = $("#nickname2").val()
+							let address2 = $("#address2").val()
+							let phone2 = $("#phone2").val()
+							$.ajax({
+								async: false,
+								url: "/FashionGirl/serveltAction.action?methodName=updateDeliveryInformation",
+								type: "post",
+								dataType: "json",
+								data: {
+									id,
+									nickname2,
+									address2,
+									phone2
+								},
+								success: function() {
+									/* $("#myaccount-content").html(address); */
+									$(".editAddressForm2").hide();
+									$(".map").hide();
+									alert("修改成功！");
+									selectDeliveryInformation();
+								},
+								error: function() {}
+							})
+						})
+
+						function saveUpdateress() {
+
+						}
+					},
+					error: function() {}
+				})
+			}
+
+			function deleteaaa(index) {
+				$.ajax({
+					url: "/FashionGirl/serveltAction.action?methodName=deleteDeliveryInformation",
+					type: "post",
+					dataType: "json",
+					data: {
+						index
+					},
+					success: function() {
+						alert("删除成功！");
+						selectDeliveryInformation();
+					},
+					error: function() {}
+				})
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="meta description">
+<!-- Site title -->
+<title>时尚丽人</title>
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/img/favicon.ico"
+	type="image/x-icon" />
+<!-- Bootstrap CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font-Awesome CSS -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- IonIcon CSS -->
+<link href="assets/css/ionicons.min.css" rel="stylesheet">
+<!-- helper class css -->
+<link href="assets/css/helper.min.css" rel="stylesheet">
+<!-- Plugins CSS -->
+<link href="assets/css/plugins.css" rel="stylesheet">
+<!-- Main Style CSS -->
+<link href="assets/css/style.css" rel="stylesheet">
+
+<!-- Jquery Min Js -->
+<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+<style>
+.inp {
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	padding: 0 10px;
+	width: 278px;
+	height: 40px;
+	font-size: 18px;
+}
+
+.btn {
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	color: #666;
+	cursor: pointer;
+	background: white linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
+}
+
+.btn:hover {
+	background: white linear-gradient(0deg, #ffffff 0%, #f3f3f3 100%)
+}
+
+#captcha1 {
+	width: 220px;
+	display: inline-block;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+#notice1 {
+	color: red;
+}
+
+label {
+	vertical-align: top;
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+#wait1 {
+	text-align: left;
+	color: #666;
+	margin: 0;
+}
+</style>
+</head>
+
+<body>
+	<header>
+		<!-- main menu area start -->
+		<div class="header-main sticky">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="logo">
+							<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo"></a>
+						</div>
+					</div>
+					<div class="col-lg-6 d-none d-lg-block">
+						<div class="main-header-inner">
+							<div class="main-menu">
+								<nav id="mobile-menu">
+									<ul>
+										<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown">
+												<li><a href="index.html">时尚美妆</a></li>
+												<li><a href="index-2.html">精品女装</a></li>
+												<li><a href="index-3.html">高档首饰</a></li>
+												<li><a href="index-4.html">潮流女包</a></li>
+											</ul>
+										</li>
+										<li><a href="contact-us.html">联系我们</a></li>
+										<li><a href="about-us.html">关于我们</a></li>
+										<li><a href="register.html">注册</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6 ml-auto">
+						<div class="header-setting-option">
+							<div class="search-wrap">
+								<button type="submit" class="search-trigger">
+									<i class="ion-ios-search-strong"></i>
+								</button>
+							</div>
+							<div class="settings-top">
+								<div class="settings-btn">
+									<i class="ion-android-settings"></i>
+								</div>
+								<ul class="settings-list">
+									<li>我</li>
+										<ul>
+											<li><a href="my-account.html">我的账户</a></li>
+											<li><a href="login.html">登录</a></li>
+											<li><a href="register.html">注册</a></li>
+										</ul>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- main menu area end -->
+
+		<!-- Start Search Popup -->
+		<div class="box-search-content search_active block-bg close__top">
+			<form class="minisearch" action="#">
+				<div class="field__search">
+					<input type="text" placeholder="Search Our Catalog">
+					<div class="action">
+						<a href="#"><i class="fa fa-search"></i></a> <img
+							src="assets/img/huatong.png" width="50px" height="50px" />
+					</div>
+				</div>
+			</form>
+			<div class="close__wrap">
+				<span>close</span>
+			</div>
+		</div>
+		<!-- End Search Popup -->
+	</header>
+	<!-- header area end -->
+
+	<!-- breadcrumb area start -->
+	<div class="breadcrumb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="breadcrumb-wrap">
+						<nav aria-label="breadcrumb">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+								<li class="breadcrumb-item active" aria-current="page">登录</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- breadcrumb area end -->
+
+	<!-- page main wrapper start -->
+	<!-- login register wrapper start -->
+	<div class="login-register-wrapper pt-100 pb-100 pt-sm-58 pb-sm-58">
+		<div class="container">
+			<div class="member-area-from-wrap">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<!-- Login Content Start -->
+					<div class="col-lg-4">
+						<div class="login-reg-form-wrap  pr-lg-50">
+							<h2>
+								账号登陆&nbsp;&nbsp;&nbsp;&nbsp;<a href="facelogin.html">人脸登陆</a>
+							</h2>
+
+							<form method="post">
+								<div class="single-input-item">
+									<input type="text" id="account" name="account"
+										placeholder="邮箱/用户名/手机号" required />
+								</div>
+								<div class="single-input-item">
+									<input type="password" id="password" name="password"
+										placeholder="请输入密码" required />
+								</div>
+								<div class="single-input-item">
+									<div class="login-reg-form-meta d-flex align-items-center justify-content-between">
+										<div class="remember-meta">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="rememberMe"> <label
+													class="custom-control-label" for="rememberMe">记住密码</label>
+											</div>
+										</div>
+										<a href="#" class="forget-pwd">忘记密码?</a>
+									</div>
+								</div>
+								<div class="single-input-item">
+									<div class="row">
+										<div class="col-lg-3"></div>
+										<div id="captcha1">
+											<p id="wait1" class="show">正在加载验证码......</p>
+										</div>
+									</div>
+								</div>
+								<div class="single-input-item">
+									<div class="row">
+										<div class="col-lg-5"></div>
+										<p id="notice1" class="hide">请先完成验证</p>
+									</div>
+								</div>
+								<div class="single-input-item">
+									<div class="row">
+										<div class="col-lg-5"></div>
+										<button class="sqr-btn col-lg-2" type="button" id="loginBtn">登陆</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Login Content End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- login register wrapper end -->
+	<!-- page main wrapper end -->
+	<footer>
+		<script>
+			$("footer").load("footer.html");
+		</script>
+	</footer>
+	<!-- Scroll to top start -->
+	<div class="scroll-top not-visible">
+		<i class="fa fa-angle-up"></i>
+	</div>
+	<!-- Scroll to Top End -->
+
+	<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<!-- Popper Min Js -->
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<!-- Bootstrap Min Js -->
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Plugins Js-->
+	<script src="assets/js/plugins.js"></script>
+	<!-- Ajax Mail Js -->
+	<script src="assets/js/ajax-mail.js"></script>
+	<!-- Active Js -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/common.js"></script>
+	<script src="assets/js/gt.js"></script>
+	<script type="text/javascript">
+		var handler1 = function (captchaObj) {
+			$("#loginBtn").click(function(e) {
+				var result = captchaObj.getValidate();
+	            if (!result) {
+	                $("#notice1").show();
+	                setTimeout(function () {
+	                    $("#notice1").hide();
+	                }, 2000);
+	                e.preventDefault();
+	            }else{
+					loginFunction();
+	            }
+			});
+			  // 将验证码加到id为captcha的元素里，同时会有三个input的值用于表单提交
+	        captchaObj.appendTo("#captcha1");
+	        captchaObj.onReady(function () {
+	            $("#wait1").hide();
+	        });
+	    };
+		$(window).keyup(function(e) {
+			if (e.keyCode == 13) {
+				loginFunction();
+			}
+		});
+		//非空验证
+		function loginFunction(){
+			var account = $('input[name="account"]').val();
+			var password = $('input[name="password"]').val();
+			if (account == '') {
+				alert('请输入您的账号');
+			} else if (password == '') {
+				alert('请输入密码');
+			} else {
+				//登陆
+				var JsonData = {
+					account: account,
+					password: password
+				};
+				$.ajax({
+					type: "post",
+					url: "/FashionGirl/serveltAction.action?methodName=login",
+					data: JsonData,
+					dataType: "json",
+					success: (responseText) => {
+						switch (responseText.status) {
+							case "success":
+								alert('登陆成功！');
+								sessionStorage.setItem("user", JSON.stringify(responseText.queryUser));
+								window.location.replace("index.html")
+								break;
+							case "failed":
+								alert('登陆失败！');
+								break;
+							default:
+								break;
+						}
+					},
+				});
+			}
+		};
+	</script>
+	<script>
+	    $.ajax({
+	        url: "gt/register?t=" + (new Date()).getTime(), // 加随机数防止缓存
+	        type: "get",
+	        dataType: "json",
+	        success: function (data) {
+	            // 调用 initGeetest 初始化参数
+	            // 参数1：配置参数
+	            // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它调用相应的接口
+	            initGeetest({
+	                gt: data.gt,
+	                challenge: data.challenge,
+	                new_captcha: data.new_captcha, // 用于宕机时表示是新验证码的宕机
+	                offline: !data.success, // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+	                product: "float", // 产品形式，包括：float，popup
+	                width: "100%"
+	            }, handler1);
+	        }
+	    });
+	</script>
+</body>
+
+</html>

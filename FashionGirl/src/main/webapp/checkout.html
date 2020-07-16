@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="meta description">
+		<!-- Site title -->
+		<title>时尚丽人</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font-Awesome CSS -->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<!-- IonIcon CSS -->
+		<link href="assets/css/ionicons.min.css" rel="stylesheet">
+		<!-- helper class css -->
+		<link href="assets/css/helper.min.css" rel="stylesheet">
+		<!-- Plugins CSS -->
+		<link href="assets/css/plugins.css" rel="stylesheet">
+		<!-- Main Style CSS -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<!-- Jquery Min Js -->
+		<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<!-- header area start -->
+		<header>
+			<!-- main menu area start -->
+			<div class="header-main sticky">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="logo">
+								<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 d-none d-lg-block">
+							<div class="main-header-inner">
+								<div class="main-menu">
+									<nav id="mobile-menu">
+										<ul>
+											<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">时尚美妆</a></li>
+													<li><a href="index-2.html">精品女装</a></li>
+													<li><a href="index-3.html">高档首饰</a></li>
+													<li><a href="index-4.html">潮流女包</a></li>
+												</ul>
+											</li>
+											<li class="static"><a href="#">服务<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="cart.html">购物车</a></li>
+													<li><a href="my-account.html">订单支付</a></li>
+													<li><a href="wishlist.html">愿望清单</a></li>
+													<li><a href="my-account.html">我的账户</a></li>
+												</ul>
+											</li>
+											<li><a href="#">淘货<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="shop-grid-left-sidebar.html">店铺---左侧栏</a></li>
+													<li><a href="shop-grid-right-sidebar.html">店铺---右侧栏</a></li>
+													<li><a href="shop-grid-full-width.html">店铺全宽</a></li>
+												</ul>
+											</li>
+											<li><a href="contact-us.html">联系我们</a></li>
+											<li><a href="about-us.html">关于我们</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-6 ml-auto">
+							<div class="header-setting-option">
+								<div class="search-wrap">
+									<button type="submit" class="search-trigger">
+										<i class="ion-ios-search-strong"></i>
+									</button>
+								</div>
+								<div class="header-mini-cart">
+									<div class="mini-cart-btn">
+										<i class="ion-bag"></i> <span class="cart-notification">2</span>
+									</div>
+									<ul class="cart-list">
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">simple product 09</a>
+												</h4>
+												<span>$60.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">virtual product 10</a>
+												</h4>
+												<span>$50.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li class="mini-cart-price"><span class="subtotal">subtotal
+												: </span> <span class="subtotal-price ml-auto">$110.00</span></li>
+										<li class="checkout-btn"><a href="#">checkout</a></li>
+									</ul>
+								</div>
+								<div class="settings-top">
+									<div class="settings-btn">
+										<i class="ion-android-settings"></i>
+									</div>
+									<ul class="settings-list">
+										<li><span id="nickname"></span><span id="faceid"> </span>---欢迎您！
+											<ul>
+												<li><a href="my-account.html">我的账户</a></li>
+												<li><a href="login.html">登录</a></li>
+												<li id="exit"><a href="login.html">退出</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-block d-lg-none">
+							<div class="mobile-menu">
+								<a href="#">
+									<li><span id="opt" style="color: #df1f26; font-weight: bold;"></span>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您！</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main menu area end -->
+
+			<!-- Start Search Popup -->
+			<div class="box-search-content search_active block-bg close__top">
+				<form class="minisearch" action="#">
+					<div class="field__search">
+						<input type="text" placeholder="Search Our Catalog">
+						<div class="action">
+							<a href="#"><i class="fa fa-search"></i></a>
+							<img src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+						</div>
+					</div>
+				</form>
+				<div class="close__wrap">
+					<span>close</span>
+				</div>
+			</div>
+			<!-- End Search Popup -->
+
+		</header>
+		<!-- header area end -->
+
+		<!-- breadcrumb area start -->
+		<div class="breadcrumb-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="breadcrumb-wrap">
+							<nav aria-label="breadcrumb">
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+									<li class="breadcrumb-item"><a href="shop-grid-left-sidebar.html">店铺</a></li>
+									<li class="breadcrumb-item active" aria-current="page">支付</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- breadcrumb area end -->
+
+		<!-- page main wrapper start -->
+		<main>
+			<!-- checkout main wrapper start -->
+			<div class="checkout-page-wrapper pt-100 pb-90 pt-sm-58 pb-sm-54">
+				<div class="container">
+					<div class="row">
+						<!-- Checkout Billing Details -->
+						<div class="col-lg-6">
+							<div class="checkout-billing-details-wrap">
+								<h2 style="color: #ff7e67;">结算明细</h2>
+								<div class="billing-form-wrap">
+									<form id="appForm" method="post" action="/FashionGirl/user.action?methodName=alipay">
+										<div class="single-input-item">
+											<label for="user_name" class="required">收货人</label>
+											<input type="text" id="user_name" name="user_name" placeholder="收货人的名称" required />
+										</div>
+
+										<div class="single-input-item">
+											<label for="country" class="required">默认地址</label>
+											<select name="country nice-select" id="country">
+												<option value="Chaina">中国</option>
+												<option value="Afghanistan">阿富汗</option>
+												<option value="Albania">阿尔巴尼亚</option>
+												<option value="Algeria">阿尔及利亚</option>
+												<option value="Armenia">亚美尼亚</option>
+												<option value="Bangladesh">孟加拉国</option>
+												<option value="India">印度</option>
+												<option value="Pakistan">巴基斯坦</option>
+												<option value="England">英国</option>
+											</select>
+										</div>
+
+										<div class="single-input-item">
+											<label for="收货地址" class="required">添加一个新收货地址</label>
+											<input type="text" id="address" name="address" placeholder="收货地址" required />
+										</div>
+
+										<div class="single-input-item">
+											<label for="user_phone">电话</label>
+											<input type="text" id="user_phone" name="user_phone" placeholder="收货人的联系方式" />
+										</div>
+										<input id="zongjihiden" name="zongjihiden" type="hidden"/>
+										<input id ="alipayorder_id" name="alipayorder_id" type="hidden" value="" />
+										<div class="single-input-item">
+											<label for="ordernote">订购须知</label>
+											<textarea name="ordernote" id="ordernote" cols="30" rows="3" placeholder="关于你的订单的说明，例如送货单."></textarea>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<!-- Order Summary Details -->
+						<div class="col-lg-6">
+							<div class="order-summary-details mt-md-26 mt-sm-26">
+								<h2 style="color: #ff7e67;">你的订单概要</h2>
+								<div class="order-summary-content mb-sm-4">
+									<!-- Order Summary Table -->
+									<div class="order-summary-table table-responsive text-center">
+									<form>
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th>产品展示</th>
+													<th>价格详情</th>
+												</tr>
+											</thead>
+											<tbody id="wlTbody">
+												<!-- 展示商品项 -->
+											</tbody>
+											<tfoot>
+												<tr>
+													<td>小计</td>
+													<td><strong><span id="xiaoji"></span></strong></td>
+												</tr>
+												<tr>
+													<td>运输</td>
+													<td class="d-flex justify-content-center">
+														<ul class="shipping-type">
+															<li>
+																<div class="custom-control custom-radio">
+																	<input type="radio" id="flatrate" name="shipping" class="custom-control-input" checked />
+																	<label class="custom-control-label" for="flatrate">统一费用：70.00美元</label>
+																</div>
+															</li>
+															<li>
+																<div class="custom-control custom-radio">
+																	<input type="radio" id="freeshipping" name="shipping" checked="checked" class="custom-control-input" />
+																	<label class="custom-control-label" for="freeshipping">免费送货</label>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td>总金额</td>
+													<td>
+														<strong><span id="zongji"></span></strong>
+													</td>
+												</tr>
+											</tfoot>
+										</table>
+									</form>
+									</div>
+									<!-- Order Payment Method -->
+									<div class="order-payment-method">
+										<div class="single-payment-method show">
+											<div class="payment-method-name">
+												<div class="custom-control custom-radio">
+													<input type="radio" id="cashon" name="paymentmethod" value="cash" class="custom-control-input" checked />
+													<label class="custom-control-label" for="cashon">货到付款</label>
+												</div>
+											</div>
+											<div class="payment-method-details" data-method="bank">
+												<p>收货之后，检查商品无误后，在进行付款...</p>
+											</div>
+										</div>
+										<div class="single-payment-method">
+											<div class="payment-method-name">
+												<div class="custom-control custom-radio">
+													<input type="radio" id="directbank" name="paymentmethod" value="bank" class="custom-control-input" />
+													<label class="custom-control-label" for="directbank">直接银行转帐</label>
+												</div>
+											</div>
+											<div class="payment-method-details" data-method="bank">
+												<p>将款项直接存入我们的银行帐户。请使用您的订单ID作为付款参考。在我们的帐户中的资金被清除后，才会下达您的订单...</p>
+											</div>
+										</div>
+										<div class="single-payment-method">
+											<div class="payment-method-name">
+												<div class="custom-control custom-radio">
+													<input type="radio" id="checkpayment" name="paymentmethod" value="check" class="custom-control-input" />
+													<label class="custom-control-label" for="checkpayment">支付宝支付</label>
+												</div>
+											</div>
+											<div class="payment-method-details" data-method="check">
+												<p>支付宝沙箱环境支付</p>
+											</div>
+										</div>
+										<div class="summary-footer-area">
+											<div class="custom-control custom-checkbox mb-14">
+												<input type="checkbox" class="custom-control-input" id="terms" required />
+												<label class="custom-control-label" for="terms">我已阅读并同意网站的条款和条件<a href="index.html"></a></label>
+											</div>
+											<button class="sqr-btn" type="button" id="checkoutBtn">去支付</button>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- checkout main wrapper end -->
+		</main>
+		<!-- page main wrapper end -->
+
+		<!-- footer area start -->
+		<footer>
+			<script>
+				$("footer").load("footer.html");
+			</script>
+		</footer>
+		<!-- footer area end -->
+
+		<!-- Scroll to top start -->
+		<div class="scroll-top not-visible">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<!-- Scroll to Top End -->
+
+		<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+		<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+		<!-- Popper Min Js -->
+		<script src="assets/js/vendor/popper.min.js"></script>
+		<!-- Bootstrap Min Js -->
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<!-- Plugins Js-->
+		<script src="assets/js/plugins.js"></script>
+		<!-- Ajax Mail Js -->
+		<script src="assets/js/ajax-mail.js"></script>
+		<!-- Active Js -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/checkout.js"></script>
+		<script src="assets/js/common.js"></script>
+		<script src="assets/js/exit.js"></script>
+	</body>
+
+</html>

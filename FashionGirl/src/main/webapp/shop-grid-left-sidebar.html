@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="meta description">
+<!-- Site title -->
+<title>时尚丽人</title>
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/img/favicon.ico"
+	type="image/x-icon" />
+<!-- Bootstrap CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font-Awesome CSS -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- IonIcon CSS -->
+<link href="assets/css/ionicons.min.css" rel="stylesheet">
+<!-- helper class css -->
+<link href="assets/css/helper.min.css" rel="stylesheet">
+<!-- Plugins CSS -->
+<link href="assets/css/plugins.css" rel="stylesheet">
+<!-- Main Style CSS -->
+<link href="assets/css/style.css" rel="stylesheet">
+<!-- Jquery Min Js -->
+<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<!-- header area start -->
+	<header>
+		<!-- main menu area start -->
+			<div class="header-main sticky">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="logo">
+								<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 d-none d-lg-block">
+							<div class="main-header-inner">
+								<div class="main-menu">
+									<nav id="mobile-menu">
+										<ul>
+											<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">时尚美妆</a></li>
+													<li><a href="index-2.html">精品女装</a></li>
+													<li><a href="index-3.html">高档首饰</a></li>
+													<li><a href="index-4.html">潮流女包</a></li>
+												</ul>
+											</li>
+											<li class="static"><a href="#">服务<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="cart.html">购物车</a></li>
+													<li><a href="my-account.html">订单支付</a></li>
+													<li><a href="wishlist.html">愿望清单</a></li>
+													<li><a href="my-account.html">我的账户</a></li>
+												</ul>
+											</li>
+											<li><a href="#">淘货<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="shop-grid-left-sidebar.html">店铺---左侧栏</a></li>
+													<li><a href="shop-grid-right-sidebar.html">店铺---右侧栏</a></li>
+													<li><a href="shop-grid-full-width.html">店铺全宽</a></li>
+												</ul>
+											</li>
+											<li><a href="contact-us.html">联系我们</a></li>
+											<li><a href="about-us.html">关于我们</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-6 ml-auto">
+							<div class="header-setting-option">
+								<div class="search-wrap">
+									<button type="submit" class="search-trigger">
+										<i class="ion-ios-search-strong"></i>
+									</button>
+								</div>
+								<div class="header-mini-cart">
+									<div class="mini-cart-btn">
+										<i class="ion-bag"></i> <span class="cart-notification">2</span>
+									</div>
+									<ul class="cart-list">
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">simple product 09</a>
+												</h4>
+												<span>$60.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">virtual product 10</a>
+												</h4>
+												<span>$50.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li class="mini-cart-price"><span class="subtotal">subtotal
+												: </span> <span class="subtotal-price ml-auto">$110.00</span></li>
+										<li class="checkout-btn"><a href="#">checkout</a></li>
+									</ul>
+								</div>
+								<div class="settings-top">
+									<div class="settings-btn">
+										<i class="ion-android-settings"></i>
+									</div>
+									<ul class="settings-list">
+										<li><span id="nickname"></span><span id="faceid"> </span>---欢迎您！
+											<ul>
+												<li><a href="my-account.html">我的账户</a></li>
+												<li><a href="login.html">登录</a></li>
+												<li id="exit"><a href="login.html">退出</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-block d-lg-none">
+							<div class="mobile-menu">
+								<a href="#">
+									<li><span id="opt" style="color: #df1f26; font-weight: bold;"></span>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您！</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main menu area end -->
+
+		<!-- Start Search Popup -->
+		<div class="box-search-content search_active block-bg close__top">
+			<form class="minisearch" action="#">
+				<div class="field__search">
+					<input type="text" placeholder="Search Our Catalog">
+					<div class="action">
+						<a href="#"><i class="fa fa-search"></i></a> <img
+							src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+					</div>
+				</div>
+			</form>
+			<div class="close__wrap">
+				<span>close</span>
+			</div>
+		</div>
+		<!-- End Search Popup -->
+	</header>
+	<!-- header area end -->
+
+	<!-- breadcrumb area start -->
+	<div class="breadcrumb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="breadcrumb-wrap">
+						<nav aria-label="breadcrumb">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+								<li class="breadcrumb-item"><a
+									href="shop-grid-left-sidebar.html">店铺</a></li>
+								<li class="breadcrumb-item active" aria-current="page">商店网格左侧边栏</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- breadcrumb area end -->
+
+	<!-- page main wrapper start -->
+	<main>
+	<div class="shop-main-wrapper pt-100 pb-100 pt-sm-58 pb-sm-58">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 order-2 order-lg-1">
+					<div class="sidebar-wrapper mt-md-100 mt-sm-48">
+						<!-- single sidebar start -->
+						<div class="sidebar-single">
+							<div class="sidebar-title">
+								<h3>店铺</h3>
+							</div>
+							<div class="sidebar-body">
+								<ul class="sidebar-category">
+									<li><a href="#">时尚美妆</a>
+										<ul class="children">
+											<li><a href="#">精品女装</a></li>
+											<li><a href="#">surfboard</a></li>
+											<li><a href="#">accessories</a></li>
+										</ul></li>
+									<li><a href="#">精品女装</a>
+										<ul class="children">
+											<li><a href="#">Samsome</a></li>
+											<li><a href="#">GL Stylus</a></li>
+											<li><a href="#">Uawei</a></li>
+											<li><a href="#">Cherry Berry</a></li>
+										</ul></li>
+									<li><a href="#">高档首饰</a>
+										<ul class="children">
+											<li><a href="#">Power Bank</a></li>
+											<li><a href="#">Data Cable</a></li>
+											<li><a href="#">Power Cable</a></li>
+											<li><a href="#">Battery</a></li>
+										</ul></li>
+									<li><a href="#">潮流女包</a>
+										<ul class="children">
+											<li><a href="#">Desktop Headphone</a></li>
+											<li><a href="#">Mobile Headphone</a></li>
+											<li><a href="#">Wireless Headphone</a></li>
+											<li><a href="#">LED Headphone</a></li>
+										</ul></li>
+								</ul>
+							</div>
+						</div>
+						<!-- single sidebar end -->
+
+						<!-- single sidebar start -->
+						<div class="sidebar-single">
+							<div class="sidebar-title">
+								<h3>类别</h3>
+							</div>
+							<div class="sidebar-body">
+								<ul class="price-container">
+									<li class="active"><label class="checkbox-container">
+											健康 (10) <input type="checkbox" name="checkbox"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="checkbox-container"> 美妆 (16) <input
+											type="checkbox" name="checkbox"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="checkbox-container"> 化妆 (10) <input
+											type="checkbox" name="checkbox"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="checkbox-container"> 护肤 (9) <input
+											type="checkbox" name="checkbox"> <span
+											class="checkmark"></span>
+									</label></li>
+								</ul>
+							</div>
+						</div>
+						<!-- single sidebar end -->
+
+						<!-- single sidebar start -->
+						<div class="sidebar-single">
+							<div class="sidebar-title">
+								<h3>价钱</h3>
+							</div>
+							<div class="sidebar-body">
+								<ul class="price-container">
+									<li class="active"><label class="radio-container">
+											$20.00 - $21.00 <input type="radio" name="radio"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="radio-container"> $26.00 -
+											$30.00 <input type="radio" name="radio"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="radio-container"> $48.00 -
+											$50.00 <input type="radio" name="radio"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="radio-container"> $100.00 -
+											$200.00 <input type="radio" name="radio"> <span
+											class="checkmark"></span>
+									</label></li>
+									<li><label class="radio-container"> $200.00 -
+											$500.00 <input type="radio" name="radio"> <span
+											class="checkmark"></span>
+									</label></li>
+								</ul>
+							</div>
+						</div>
+						<!-- single sidebar end -->
+
+						<!-- single sidebar start -->
+						<div class="sidebar-single">
+							<div class="sidebar-title">
+								<h3>热门产品</h3>
+							</div>
+							<div class="sidebar-body">
+								<div class="popular-item-inner">
+									<div class="popular-item">
+										<div class="pop-item-thumb">
+											<a href="product-details.hrtml"> <img
+												src="assets/img/product/product-6.jpg" alt="">
+											</a>
+										</div>
+										<div class="pop-item-des">
+											<h4>
+												<a href="product-details.html">乔木燕窝</a>
+											</h4>
+											<span class="pop-price">$50.00</span>
+										</div>
+									</div>
+									<!-- end single popular item -->
+									<div class="popular-item">
+										<div class="pop-item-thumb">
+											<a href="product-details.hrtml"> <img
+												src="assets/img/product/product-7.jpg" alt="">
+											</a>
+										</div>
+										<div class="pop-item-des">
+											<h4>
+												<a href="product-details.html">睫毛膏</a>
+											</h4>
+											<span class="pop-price">$60.00</span>
+										</div>
+									</div>
+									<!-- end single popular item -->
+									<div class="popular-item">
+										<div class="pop-item-thumb">
+											<a href="product-details.hrtml"> <img
+												src="assets/img/product/product-8.jpg" alt="">
+											</a>
+										</div>
+										<div class="pop-item-des">
+											<h4>
+												<a href="product-details.html">口红</a>
+											</h4>
+											<span class="pop-price">$100.00</span>
+										</div>
+									</div>
+									<!-- end single popular item -->
+								</div>
+							</div>
+						</div>
+						<!-- single sidebar end -->
+
+						<!-- single sidebar start -->
+						<div class="sidebar-single">
+							<div class="advertising-thumb img-full fix">
+								<a href="#"> <img src="assets/img/banner/advertising.jpg"
+									alt="">
+								</a>
+							</div>
+						</div>
+						<!-- single sidebar end -->
+					</div>
+				</div>
+				<!-- product view wrapper area start -->
+				<div class="col-xl-9 col-lg-8 order-1 order-lg-2">
+					<div class="shop-product-wrapper">
+						<!-- shop product top wrap start -->
+						<div class="shop-top-bar">
+							<div class="row">
+								<div class="col-lg-7 col-md-6">
+									<div class="top-bar-left">
+										<div class="product-view-mode">
+											<a class="active" href="#" data-target="grid"><i
+												class="fa fa-th"></i></a> <a href="#" data-target="list"><i
+												class="fa fa-list"></i></a>
+										</div>
+										<div class="product-amount">
+											<p>每页显示9条数据</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-5 col-md-6">
+									<div class="top-bar-right">
+										<div class="product-short">
+											<p>排序方式 :</p>
+											<select class="nice-select" name="sortby">
+												<option value="sales">名称 (A - Z)</option>
+												<option value="sales">名称 (Z - A)</option>
+												<option value="rating">价格 (低 ——> 高)</option>
+												<option value="date">评分 (高 ——> 低)</option>
+												<option value="date">时间 (近 ——> 远)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- shop product top wrap start -->
+						<!-- product view mode wrapper start -->
+						<div class="shop-product-wrap grid row" id="shop-product-wrap456">
+						</div>
+						<!-- product view mode wrapper start -->
+					</div>
+						<!-- start pagination area -->
+						<div class="paginatoin-area text-center mt-18">
+							<ul class="pagination-box" id="pagination-box">
+							</ul>
+						</div>
+						<!-- end pagination area -->
+				</div>
+			</div>
+		</div>
+	</div>
+	</main>
+	<!-- page main wrapper end -->
+
+	<!-- footer area start -->
+	<footer>
+		<script>
+				$("footer").load("footer.html");
+		</script>
+	</footer>
+	<!-- footer area end -->
+
+	<!-- Quick view modal start -->
+	<div class="modal" id="quick_view">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<!-- product details inner end -->
+					<div class="product-details-inner">
+						<div class="row">
+							<div class="col-lg-5 col-md-5">
+								<div
+									class="product-large-slider mb-20 slider-arrow-style slider-arrow-style__style-2">
+									<div class="pro-large-img">
+										<img src="assets/img/product/product-details-img1.jpg" alt="" />
+									</div>
+									<div class="pro-large-img">
+										<img src="assets/img/product/product-details-img2.jpg" alt="" />
+									</div>
+									<div class="pro-large-img">
+										<img src="assets/img/product/product-details-img3.jpg" alt="" />
+									</div>
+									<div class="pro-large-img">
+										<img src="assets/img/product/product-details-img4.jpg" alt="" />
+									</div>
+									<div class="pro-large-img">
+										<img src="assets/img/product/product-details-img4.jpg" alt="" />
+									</div>
+								</div>
+								<div
+									class="pro-nav slick-padding2 slider-arrow-style slider-arrow-style__style-2">
+									<div class="pro-nav-thumb">
+										<img src="assets/img/product/product-details-img1.jpg" alt="" />
+									</div>
+									<div class="pro-nav-thumb">
+										<img src="assets/img/product/product-details-img2.jpg" alt="" />
+									</div>
+									<div class="pro-nav-thumb">
+										<img src="assets/img/product/product-details-img3.jpg" alt="" />
+									</div>
+									<div class="pro-nav-thumb">
+										<img src="assets/img/product/product-details-img4.jpg" alt="" />
+									</div>
+									<div class="pro-nav-thumb">
+										<img src="assets/img/product/product-details-img5.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-7">
+								<div class="product-details-des pt-sm-30">
+									<h3>Chaz Kangeroo Hoodies</h3>
+									<div class="ratings">
+										<span class="good"><i class="fa fa-star"></i></span> <span
+											class="good"><i class="fa fa-star"></i></span> <span
+											class="good"><i class="fa fa-star"></i></span> <span
+											class="good"><i class="fa fa-star"></i></span> <span><i
+											class="fa fa-star"></i></span>
+										<div class="pro-review">
+											<span><a href="#">1 review(s)</a></span>
+										</div>
+									</div>
+									<div class="pricebox">
+										<span class="regular-price">$160.00</span>
+									</div>
+									<p>
+										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+										diam nonumy eirmod tempor invidunt ut labore et dolore magna
+										aliquyam erat, sed diam voluptua.<br> Phasellus id nisi
+										quis justo tempus mollis sed et dui. In hac habitasse platea
+										dictumst.
+									</p>
+									<div class="quantity-cart-box d-flex align-items-center mb-24">
+										<div class="quantity">
+											<div class="pro-qty">
+												<input type="text" value="1">
+											</div>
+										</div>
+										<div class="product-btn product-btn__color">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+									</div>
+									<div class="availability mb-16">
+										<h5>Availability:</h5>
+										<span>in stock</span>
+									</div>
+									<div class="share-icon">
+										<h5>share:</h5>
+										<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+											class="fa fa-twitter"></i></a> <a href="#"><i
+											class="fa fa-pinterest"></i></a> <a href="#"><i
+											class="fa fa-google-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product details inner end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Quick view modal end -->
+
+	<!-- Scroll to top start -->
+	<div class="scroll-top not-visible">
+		<i class="fa fa-angle-up"></i>
+	</div>
+	<!-- Scroll to Top End -->
+
+	<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<!-- Jquery Min Js -->
+	<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+	<!-- Popper Min Js -->
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<!-- Bootstrap Min Js -->
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Plugins Js-->
+	<script src="assets/js/plugins.js"></script>
+	<!-- Ajax Mail Js -->
+	<script src="assets/js/ajax-mail.js"></script>
+	<!-- Active Js -->
+	<script src="assets/js/main.js"></script>
+	<!-- 分页的js -->
+	<script src="assets/js/page.js"></script>
+	<script src="assets/js/common.js"></script>
+</body>
+
+</html>

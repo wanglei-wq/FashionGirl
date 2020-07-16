@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="meta description">
+<!-- Site title -->
+<title>时尚丽人</title>
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/img/favicon.ico"
+	type="image/x-icon" />
+<!-- Bootstrap CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font-Awesome CSS -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<!-- IonIcon CSS -->
+<link href="assets/css/ionicons.min.css" rel="stylesheet">
+<!-- helper class css -->
+<link href="assets/css/helper.min.css" rel="stylesheet">
+<!-- Plugins CSS -->
+<link href="assets/css/plugins.css" rel="stylesheet">
+<!-- Main Style CSS -->
+<link href="assets/css/style.css" rel="stylesheet">
+<!-- Jquery Min Js -->
+<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="assets/js/register.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+	<header>
+		<!-- main menu area start -->
+		<div class="header-main sticky">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="logo">
+							<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo"></a>
+						</div>
+					</div>
+					<div class="col-lg-6 d-none d-lg-block">
+						<div class="main-header-inner">
+							<div class="main-menu">
+								<nav id="mobile-menu">
+									<ul>
+										<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown">
+												<li><a href="index.html">时尚美妆</a></li>
+												<li><a href="index-2.html">精品女装</a></li>
+												<li><a href="index-3.html">高档首饰</a></li>
+												<li><a href="index-4.html">潮流女包</a></li>
+											</ul>
+										</li>
+										<li><a href="contact-us.html">联系我们</a></li>
+										<li><a href="about-us.html">关于我们</a></li>
+										<li><a href="login.html">登陆</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6 ml-auto">
+						<div class="header-setting-option">
+							<div class="search-wrap">
+								<button type="submit" class="search-trigger">
+									<i class="ion-ios-search-strong"></i>
+								</button>
+							</div>
+							<div class="settings-top">
+								<div class="settings-btn">
+									<i class="ion-android-settings"></i>
+								</div>
+								<ul class="settings-list">
+									<li>我</li>
+										<ul>
+											<li><a href="my-account.html">我的账户</a></li>
+											<li><a href="login.html">登录</a></li>
+											<li><a href="login.html">退出</a></li>
+										</ul>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- main menu area end -->
+
+		<!-- Start Search Popup -->
+		<div class="box-search-content search_active block-bg close__top">
+			<form class="minisearch" action="#">
+				<div class="field__search">
+					<input type="text" placeholder="Search Our Catalog">
+					<div class="action">
+						<a href="#"><i class="fa fa-search"></i></a> <img
+							src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+					</div>
+				</div>
+			</form>
+			<div class="close__wrap">
+				<span>close</span>
+			</div>
+		</div>
+		<!-- End Search Popup -->
+	</header>
+	<!-- header area end -->
+
+	<!-- breadcrumb area start -->
+	<div class="breadcrumb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="breadcrumb-wrap">
+						<nav aria-label="breadcrumb">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+								<li class="breadcrumb-item active" aria-current="page">注册用户</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- breadcrumb area end -->
+
+	<!-- page main wrapper start -->
+	<main> <!-- login register wrapper start -->
+	<div class="login-register-wrapper pt-100 pb-100 pt-sm-58 pb-sm-58">
+		<div class="container">
+			<div class="member-area-from-wrap">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<!-- Register Content Start -->
+					<div class="col-lg-4">
+						<div class="login-reg-form-wrap mt-md-100 mt-sm-58">
+							<h2>注册</h2>
+							<form method="post">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="single-input-item">
+											<input type="text" id="account" name="account"
+												placeholder="请输入账号" autocomplete="off" /> <span
+												id="checkMsg"></span>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="single-input-item">
+											<input type="text" id="nickname" name="nickname"
+												placeholder="请输入昵称" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="single-input-item">
+											<input type="password" id="password" name="password"
+												placeholder="请输入密码" />
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="single-input-item">
+											<input type="password" id="repassword" name="repassword"
+												placeholder="确认密码" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="single-input-item">
+											<input type="text" id="phone" name="phone"
+												placeholder="请输入手机号">
+										</div>
+
+									</div>
+									<div class="col-lg-3">
+										<div class="single-input-item">
+											<button id="sms" name="sms" type="button" 
+											 style="display:none; border-radius: 3px; background-color: #b31e22; border-color: #b31e22; color: white; width: 100px; height: 48px;">获取验证码</button>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-9">
+										<div class="single-input-item">
+											<input type="text" id="smscode" name="smscode" value=""
+												autocomplete="off" placeholder="请输入验证码">
+										</div>
+									</div>
+								</div>
+								<div class="single-input-item">
+									<div class="login-reg-form-meta">
+										<div class="remember-meta">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="subnewsletter"> <label
+													class="custom-control-label" for="subnewsletter">订阅我们的实时通讯</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="single-input-item">
+									<button type="button"  class="sqr-btn" id="registBtn">注册</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Register Content End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- login register wrapper end --> </main>
+	<!-- page main wrapper end -->
+	<footer>
+		<script>
+				$("footer").load("footer.html");
+			</script>
+	</footer>
+	<!-- Scroll to top start -->
+	<div class="scroll-top not-visible">
+		<i class="fa fa-angle-up"></i>
+	</div>
+	<!-- Scroll to Top End -->
+
+	<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<!-- Popper Min Js -->
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<!-- Bootstrap Min Js -->
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Plugins Js-->
+	<script src="assets/js/plugins.js"></script>
+	<!-- Ajax Mail Js -->
+	<script src="assets/js/ajax-mail.js"></script>
+	<!-- Active Js -->
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript">
+		Storage.prototype.setExpire = (key, value, expire) => {
+			let obj = {
+				data: value,
+				time: Date.now(),
+				expire: expire
+			};
+			localStorage.setItem(key, JSON.stringify(obj));
+		}
+		Storage.prototype.getExpire = key => {
+			let val = localStorage.getItem(key);
+			if (!val) {
+				return val;
+			}
+			val = JSON.parse(val);
+			if (Date.now() - val.time > val.expire) {
+				localStorage.removeItem(key);
+				return null;
+			}
+			return val.data;
+		}
+		$('#sms').click(function() {
+			var phone = $('input[name="phone"]').val();
+			if (phone == '') {
+				alert('手机号 不能为空！');
+				return false; 
+			}else if(!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(phone))){
+				alert('请输入正确手机号 ！');
+				return false; 
+			}else {
+				var JsonData = {
+					phone: phone
+				};
+				$.ajax({
+					type: "post",
+					url: "/FashionGirl/SmsAction.action",
+					data: JsonData,
+					dataType: "json",
+					success: (responseText) => {
+						switch (responseText.status) {
+							case "success":
+								console.log('验证码成功获取成功！');
+								let code = responseText.code;
+								console.log(code);
+								localStorage.setExpire("code", code, 1000 * 60 * 30);
+								window.setInterval(() => {
+									console.log(localStorage.getExpire("code"));
+								}, 1000)
+								//修改按钮的样式
+								let darkgrey = "darkgrey";
+								let white = "white";
+								$("#sms").attr("style","background-color:"+darkgrey+";"+"border-color:"+darkgrey+";"+"color:"+white+";"+"height:48px;width:100px;"+"border-radius: 3px;");
+								$("#sms").attr("disabled", true);
+								return false; 
+							case "failed":
+								alert("验证码获取失败！");
+								return false; 
+							default:
+								break;
+						}
+					}
+				});
+				let $res = "";
+		        var btn = $("#sms");
+				let countdown = 60; //倒计时总时间，为了演示效果，设为5秒，一般都是60s
+	            let settime = setInterval(() => {
+	                // btn.addClass("disabled");
+	                // btn.attr("disabled", true);
+	                btn.html("重新发送(" + countdown + ")");;
+	                if (countdown-- == 0) {
+	                    clearInterval(settime);
+	                    btn.attr("disabled", false);
+	                    btn.html("获取验证码");
+	                    btn.removeClass("disabled");
+	                    countdown = 60;
+	                    $res = "";
+	                }
+	            }, 1000);
+			}
+	});
+	</script>
+</body>
+
+</html>

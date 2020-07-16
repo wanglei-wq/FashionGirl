@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="meta description">
+		<!-- Site title -->
+		<title>时尚丽人</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font-Awesome CSS -->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<!-- IonIcon CSS -->
+		<link href="assets/css/ionicons.min.css" rel="stylesheet">
+		<!-- helper class css -->
+		<link href="assets/css/helper.min.css" rel="stylesheet">
+		<!-- Plugins CSS -->
+		<link href="assets/css/plugins.css" rel="stylesheet">
+		<!-- Main Style CSS -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<!-- Jquery Min Js -->
+		<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+
+
+		<!-- header area start -->
+		<header>
+			<!-- main menu area start -->
+			<div class="header-main sticky">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="logo">
+								<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 d-none d-lg-block">
+							<div class="main-header-inner">
+								<div class="main-menu">
+									<nav id="mobile-menu">
+										<ul>
+											<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">时尚美妆</a></li>
+													<li><a href="index-2.html">精品女装</a></li>
+													<li><a href="index-3.html">高档首饰</a></li>
+													<li><a href="index-4.html">潮流女包</a></li>
+												</ul>
+											</li>
+											<li class="static"><a href="#">服务<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="cart.html">购物车</a></li>
+													<li><a href="my-account.html">订单支付</a></li>
+													<li><a href="wishlist.html">愿望清单</a></li>
+													<li><a href="my-account.html">我的账户</a></li>
+												</ul>
+											</li>
+											<li><a href="#">淘货<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="shop-grid-left-sidebar.html">店铺---左侧栏</a></li>
+													<li><a href="shop-grid-right-sidebar.html">店铺---右侧栏</a></li>
+													<li><a href="shop-grid-full-width.html">店铺全宽</a></li>
+												</ul>
+											</li>
+											<li><a href="contact-us.html">联系我们</a></li>
+											<li><a href="about-us.html">关于我们</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-6 ml-auto">
+							<div class="header-setting-option">
+								<div class="search-wrap">
+									<button type="submit" class="search-trigger">
+										<i class="ion-ios-search-strong"></i>
+									</button>
+								</div>
+								<div class="header-mini-cart">
+									<div class="mini-cart-btn">
+										<i class="ion-bag"></i> <span class="cart-notification">2</span>
+									</div>
+									<ul class="cart-list">
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">simple product 09</a>
+												</h4>
+												<span>$60.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">virtual product 10</a>
+												</h4>
+												<span>$50.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li class="mini-cart-price"><span class="subtotal">subtotal
+												: </span> <span class="subtotal-price ml-auto">$110.00</span></li>
+										<li class="checkout-btn"><a href="#">checkout</a></li>
+									</ul>
+								</div>
+								<div class="settings-top">
+									<div class="settings-btn">
+										<i class="ion-android-settings"></i>
+									</div>
+									<ul class="settings-list">
+										<li><span id="nickname"></span><span id="faceid"> </span>---欢迎您！
+											<ul>
+												<li><a href="my-account.html">我的账户</a></li>
+												<li><a href="login.html">登录</a></li>
+												<li id="exit"><a href="login.html">退出</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-block d-lg-none">
+							<div class="mobile-menu">
+								<a href="#">
+									<li><span id="opt" style="color: #df1f26; font-weight: bold;"></span>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您！</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main menu area end -->
+
+			<!-- Start Search Popup -->
+			<div class="box-search-content search_active block-bg close__top">
+				<form class="minisearch" action="#">
+					<div class="field__search">
+						<input type="text" placeholder="Search Our Catalog">
+						<div class="action">
+							<a href="#"><i class="fa fa-search"></i></a>
+							<img src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+						</div>
+					</div>
+				</form>
+				<div class="close__wrap">
+					<span>close</span>
+				</div>
+			</div>
+			<!-- End Search Popup -->
+
+		</header>
+		<!-- header area end -->
+
+		<!-- breadcrumb area start -->
+		<div class="breadcrumb-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="breadcrumb-wrap">
+							<nav aria-label="breadcrumb">
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+									<li class="breadcrumb-item"><a href="shop-grid-left-sidebar.html">店铺</a></li>
+									<li class="breadcrumb-item active" aria-current="page">愿望清单</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- breadcrumb area end -->
+
+		<!-- page main wrapper start -->
+		<main>
+			<!-- wishlist main wrapper start -->
+			<div class="wishlist-main-wrapper pt-100 pb-100 pt-sm-58 pb-sm-58">
+				<div class="container">
+					<!-- Wishlist Page Content Start -->
+					<div class="row">
+						<div class="col-lg-12">
+							<!-- Wishlist Table Area -->
+							<div class="cart-table table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th class="pro-thumbnail">缩图</th>
+											<th class="pro-title">产品</th>
+											<th class="pro-price">价钱</th>
+											<th class="pro-quantity">库存状况</th>
+											<th class="pro-subtotal">添加到购物车</th>
+											<th class="pro-remove">修改</th>
+										</tr>
+									</thead>
+									<tbody id="pro-zong">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- Wishlist Page Content End -->
+				</div>
+			</div>
+			<!-- wishlist main wrapper end -->
+		</main>
+		<!-- page main wrapper end -->
+
+		<!-- footer area start -->
+		<footer>
+
+			<script>
+				$("footer").load("footer.html");
+			</script>
+
+		</footer>
+		<!-- footer area end -->
+
+		<!-- Scroll to top start -->
+		<div class="scroll-top not-visible">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<!-- Scroll to Top End -->
+
+		<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+		<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+		<!-- Popper Min Js -->
+		<script src="assets/js/vendor/popper.min.js"></script>
+		<!-- Bootstrap Min Js -->
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<!-- Plugins Js-->
+		<script src="assets/js/plugins.js"></script>
+		<!-- Ajax Mail Js -->
+		<script src="assets/js/ajax-mail.js"></script>
+		<!-- Active Js -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/exit.js"></script>
+		<script src="assets/js/common.js"></script>
+		<script>
+		$(function() {
+			$.ajax({
+				type: "post",
+				url: "/FashionGirl/serveltAction.action?methodName=queryWishList",
+				async: true,
+				dataType: "json",
+				success: (responseText) => {
+					switch (responseText.status) {
+						case "success":
+							window.console.log(responseText);
+							autoLoadWishListHTML(responseText);
+							break;
+						default:
+							break;
+					}
+				},
+			});
+		  function autoLoadWishListHTML(responseText){
+				let htmlStr=""
+				for(var i=0;i<responseText.wishListList.length;i++){
+					if (responseText.wishListList[i].pnum>0) {
+						responseText.wishListList[i].pnum="有存货"
+					}else{
+						responseText.wishListList[i].pnum="无存货"
+					}
+					htmlStr+='<tr>'
+					+'<td class="pro-thumbnail">'+'<a href="#">'+'<img class="img-fluid" src="'+responseText.wishListList[i].image+'" alt="Product" />'+'</a>'+'</td>'
+					+'<td class="pro-title">'+'<a href="#">'
+					+responseText.wishListList[i].pname
+					+'</a>'+'</td>'
+					+'<td class="pro-price">'+'<span>'
+					+responseText.wishListList[i].shop_price
+					+'</span>'+'</td>'
+					+'<td class="pro-quantity">'+'<span class="text-success">'
+					+responseText.wishListList[i].pnum
+					+'</span>'+'</td>'
+					+'<td class="pro-subtotal">'+'<a href="cart.html" class="sqr-btn text-white">'
+					+"添加到购物车"
+					+'</a>'+'</td>'
+					+'<td class="pro-remove">'
+					+'<button onclick="delectText('+responseText.wishListList[i].wid+')">'
+					+'<i class="fa fa-trash-o">'+'</i>'
+					+'<input type="hidden" id="widDelect" value="'+responseText.wishListList[i].wid+'"/>'
+					+'</button>'
+					+'</td>'+'</tr>'
+				}
+				$("#pro-zong").append(htmlStr);
+			}
+		});
+		function delectText(index){
+		    if(confirm('您正在敏感操作，确定要删除吗')==true){
+				var JsonData = {
+					wid:index,
+				};
+				$.ajax({
+					type: "post",
+					url: "/FashionGirl/serveltAction.action?methodName=removeWishList",
+					data: JsonData,
+					dataType: "json",
+					success: (responseText) => {
+						switch (responseText.status) {
+							case "success":
+								alert('删除成功！');
+								window.location.replace("wishlist.html")
+								break;
+							case "failed":
+								alert('删除失败！');
+								break;
+							default:
+								break;
+						}
+					},
+				});
+		    }else{
+		    }
+		};
+		</script>
+	</body>
+</html>

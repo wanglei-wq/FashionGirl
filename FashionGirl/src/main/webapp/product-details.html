@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="meta description">
+		<!-- Site title -->
+		<title>时尚丽人</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font-Awesome CSS -->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<!-- IonIcon CSS -->
+		<link href="assets/css/ionicons.min.css" rel="stylesheet">
+		<!-- helper class css -->
+		<link href="assets/css/helper.min.css" rel="stylesheet">
+		<!-- Plugins CSS -->
+		<link href="assets/css/plugins.css" rel="stylesheet">
+		<!-- Main Style CSS -->
+		<link href="assets/css/style.css" rel="stylesheet">
+
+		<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+		<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+		<!-- Jquery Min Js -->
+		<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/product-details.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<!-- main menu area start -->
+			<div class="header-main sticky">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="logo">
+								<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 d-none d-lg-block">
+							<div class="main-header-inner">
+								<div class="main-menu">
+									<nav id="mobile-menu">
+										<ul>
+											<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">时尚美妆</a></li>
+													<li><a href="index-2.html">精品女装</a></li>
+													<li><a href="index-3.html">高档首饰</a></li>
+													<li><a href="index-4.html">潮流女包</a></li>
+												</ul>
+											</li>
+											<li class="static"><a href="#">服务<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="cart.html">购物车</a></li>
+													<li><a href="my-account.html">订单支付</a></li>
+													<li><a href="wishlist.html">愿望清单</a></li>
+													<li><a href="my-account.html">我的账户</a></li>
+												</ul>
+											</li>
+											<li><a href="#">淘货<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="shop-grid-left-sidebar.html">店铺---左侧栏</a></li>
+													<li><a href="shop-grid-right-sidebar.html">店铺---右侧栏</a></li>
+													<li><a href="shop-grid-full-width.html">店铺全宽</a></li>
+												</ul>
+											</li>
+											<li><a href="contact-us.html">联系我们</a></li>
+											<li><a href="about-us.html">关于我们</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-6 ml-auto">
+							<div class="header-setting-option">
+								<div class="search-wrap">
+									<button type="submit" class="search-trigger">
+										<i class="ion-ios-search-strong"></i>
+									</button>
+								</div>
+								<div class="header-mini-cart">
+									<div class="mini-cart-btn">
+										<i class="ion-bag"></i> <span class="cart-notification">2</span>
+									</div>
+									<ul class="cart-list">
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">simple product 09</a>
+												</h4>
+												<span>$60.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">virtual product 10</a>
+												</h4>
+												<span>$50.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li class="mini-cart-price"><span class="subtotal">subtotal
+												: </span> <span class="subtotal-price ml-auto">$110.00</span></li>
+										<li class="checkout-btn"><a href="#">checkout</a></li>
+									</ul>
+								</div>
+								<div class="settings-top">
+									<div class="settings-btn">
+										<i class="ion-android-settings"></i>
+									</div>
+									<ul class="settings-list">
+										<li><span id="nickname"></span><span id="faceid"> </span>---欢迎您！
+											<ul>
+												<li><a href="my-account.html">我的账户</a></li>
+												<li><a href="login.html">登录</a></li>
+												<li id="exit"><a href="login.html">退出</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-block d-lg-none">
+							<div class="mobile-menu">
+								<a href="#">
+									<li><span id="opt" style="color: #df1f26; font-weight: bold;"></span>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您！</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main menu area end -->
+
+			<!-- Start Search Popup -->
+			<div class="box-search-content search_active block-bg close__top">
+				<form class="minisearch" action="#">
+					<div class="field__search">
+						<input type="text" placeholder="Search Our Catalog">
+						<div class="action">
+							<a href="#"><i class="fa fa-search"></i></a>
+							<img src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+						</div>
+					</div>
+				</form>
+				<div class="close__wrap">
+					<span>close</span>
+				</div>
+			</div>
+			<!-- End Search Popup -->
+		</header>
+		<!-- header area end -->
+
+		<!-- breadcrumb area start -->
+		<div class="breadcrumb-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="breadcrumb-wrap">
+							<nav aria-label="breadcrumb">
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+									<li class="breadcrumb-item"><a href="shop-grid-left-sidebar.html">店铺</a></li>
+									<li class="breadcrumb-item active" aria-current="page">商品详情</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- breadcrumb area end -->
+
+		<!-- page main wrapper start -->
+		<main>
+			<div class="product-details-wrapper pt-100 pb-14 pt-sm-58">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9">
+							<!-- product details inner end -->
+							<div class="product-details-inner">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="product-large-slider mb-20 slider-arrow-style slider-arrow-style__style-2">
+											<div class="pro-large-img img-zoom" id="img1">
+												<img id="productimage"  src="assets/img/product/product-details-img1.jpg" src="" alt="" />
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-7">
+										<div class="product-details-des pt-md-98 pt-sm-58">
+											<h3 id="pname">商品名称（从数据库里查出来）</h3>
+											<div class="ratings">
+												<span class="good"><i class="fa fa-star"></i></span>
+												<span class="good"><i class="fa fa-star"></i></span>
+												<span class="good"><i class="fa fa-star"></i></span>
+												<span class="good"><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<div class="pro-review">
+													<span><a href="#">1个评论（从数据库里查出来）</a></span>
+												</div>
+											</div>
+											<div class="pricebox">
+												<span id="shop_price" class="regular-price">商品的价格（从数据库里查出来）</span>
+												<input type="hidden" id="total" name="total" value="" />
+											</div>
+											<p id="pdesc">商品的介绍（从数据库里查出来）</p>
+											<div class="quantity-cart-box d-flex align-items-center mb-24">
+												<div class="quantity">
+													<div class="pro-qty"><input readonly="readonly" id="kucun" name="kucun" type="text" value="1"></div>
+												</div>
+												<div class="product-btn product-btn__color">
+													<a><i class="ion-bag"></i>
+														<button  onclick="addShoppingTextDetail()">添加到购物车</button>
+													</a>
+												</div>
+											</div>
+											<div class="availability mb-20">
+												<h5>库存:</h5>
+												<span id="pnum">有货</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- product details inner end -->
+							<!-- product details reviews start -->
+							<div class="product-details-reviews pt-98 pt-sm-58">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="product-review-info">
+											<ul class="nav review-tab">
+												<li>
+													<a class="active" data-toggle="tab" href="#tab_one">描述</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#tab_two">信息</a>
+												</li>
+												<li>
+													<a data-toggle="tab" href="#tab_three">评论</a>
+												</li>
+											</ul>
+											<div class="tab-content reviews-tab">
+												<div class="tab-pane fade show active" id="tab_one">
+													<div class="tab-one">
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor.
+															Ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies
+															massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo
+															augue nisi non neque.</p>
+														<div class="review-description">
+															<div class="tab-thumb">
+																<img src="assets/img/about/services.jpg" alt="">
+															</div>
+															<div class="tab-des mt-sm-20">
+																<h3>商品信息 :</h3>
+																<ul>
+																	<li>1：衣服好看.</li>
+																	<li>2：采用顶级的上等材料.</li>
+																	<li>3......</li>
+																	<li>4........</li>
+																	<li>5..........</li>
+																	<li>.........</li>
+																</ul>
+															</div>
+														</div>
+														<p>Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet
+															ligula euismod eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+															turpis egestas. Nam erat mi, rutrum at sollicitudin rhoncus, ultricies posuere erat. Duis convallis,
+															arcu nec aliquam consequat, purus felis vehicula felis, a dapibus enim lorem nec augue. Nunc facilisis
+															sagittis ullamcorper.</p>
+														<p>Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum
+															ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet
+															congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt.</p>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="tab_two">
+													<table class="table table-bordered">
+														<tbody>
+															<tr>
+																<td>颜色</td>
+																<td>黑色，蓝色，红色</td>
+															</tr>
+															<tr>
+																<td>尺寸</td>
+																<td>L, M, S</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="tab-pane fade" id="tab_three">
+													<form action="#" class="review-form">
+														<h5>粉底<span>的最近评论</span></h5>
+														<div class="total-reviews">
+															<div class="rev-avatar">
+																<img src="assets/img/about/avatar.jpg" alt="">
+															</div>
+															<div class="review-box">
+																<div class="ratings">
+																	<span class="good"><i class="fa fa-star"></i></span>
+																	<span class="good"><i class="fa fa-star"></i></span>
+																	<span class="good"><i class="fa fa-star"></i></span>
+																	<span class="good"><i class="fa fa-star"></i></span>
+																	<span><i class="fa fa-star"></i></span>
+																</div>
+																<div class="post-author">
+																	<p><span>张先生 -</span>2019年10月30日</p>
+																</div>
+																<p>产品好用，符合这个价位，值得购买！</p>
+															</div>
+														</div>
+														<!--<div class="form-group row">
+                                                        <div class="col">
+                                                            <label class="col-form-label"><span class="text-danger">*</span> Your Name</label>
+                                                            <input type="text" class="form-control" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col">
+                                                            <label class="col-form-label"><span class="text-danger">*</span> Your Email</label>
+                                                            <input type="email" class="form-control" required>
+                                                        </div>
+                                                    </div>-->
+														<div class="form-group row">
+															<div class="col">
+																<label class="col-form-label"><span class="text-danger">*</span> 你的评论 </label>
+																<textarea class="form-control" required></textarea>
+															</div>
+														</div>
+														<div class="form-group row">
+															<div class="col">
+																<label class="col-form-label"><span class="text-danger">*</span> 评分</label>
+																&nbsp;&nbsp;&nbsp; 不良 &nbsp;
+																<input type="radio" value="1" name="rating">
+																&nbsp;
+																<input type="radio" value="2" name="rating">
+																&nbsp;
+																<input type="radio" value="3" name="rating">
+																&nbsp;
+																<input type="radio" value="4" name="rating">
+																&nbsp;
+																<input type="radio" value="5" name="rating" checked>
+																&nbsp;好
+															</div>
+														</div>
+														<div class="buttons">
+															<button class="sqr-btn" type="submit">发表</button>
+														</div>
+													</form> <!-- end of review-form -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- product details reviews end -->
+							<!-- featured product area start -->
+							<div class="page-section pt-100 pt-sm-58">
+								<div class="section-title text-center pb-44">
+									<p>最新产品</p>
+									<h2>相关产品</h2>
+								</div>
+								<div class="releted-product spt slick-padding slick-arrow-style">
+									<div class="product-item mb-20">
+										<div class="product-thumb">
+											<a href="product-details.html">
+												<img src="assets/img/product/product-1.jpg" alt="product image">
+											</a>
+											<div class="box-label">
+												<div class="product-label new">
+													<span>new</span>
+												</div>
+												<div class="product-label discount">
+													<span>-5%</span>
+												</div>
+											</div>
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+										<div class="product-description text-center">
+											<div class="manufacturer">
+												<p><a href="product-details.html">Fashion Manufacturer</a></p>
+											</div>
+											<div class="product-name">
+												<h3><a href="product-details.html">Endeavor Daytrip</a></h3>
+											</div>
+											<div class="price-box">
+												<span class="regular-price">$100.00</span>
+												<span class="old-price"><del>$120.00</del></span>
+											</div>
+											<div class="product-btn">
+												<a href="#"><i class="ion-bag"></i>Add to cart</a>
+											</div>
+											<div class="hover-box text-center">
+												<div class="ratings">
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item mb-20">
+										<div class="product-thumb">
+											<a href="product-details.html">
+												<img src="assets/img/product/product-2.jpg" alt="product image">
+											</a>
+											<div class="box-label">
+												<div class="product-label new">
+													<span>new</span>
+												</div>
+											</div>
+											<div class="product-action-link">
+												<div class="product-action-link">
+													<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+														 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="product-description text-center">
+											<div class="manufacturer">
+												<p><a href="product-details.html">Fashion Manufacturer</a></p>
+											</div>
+											<div class="product-name">
+												<h3><a href="product-details.html">Crown Backpacks</a></h3>
+											</div>
+											<div class="price-box">
+												<span class="regular-price">$60.00</span>
+												<span class="old-price"><del>$80.00</del></span>
+											</div>
+											<div class="product-btn">
+												<a href="#"><i class="ion-bag"></i>Add to cart</a>
+											</div>
+											<div class="hover-box text-center">
+												<div class="ratings">
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item mb-20">
+										<div class="product-thumb">
+											<a href="product-details.html">
+												<img src="assets/img/product/product-3.jpg" alt="product image">
+											</a>
+											<div class="box-label">
+												<div class="product-label new">
+													<span>new</span>
+												</div>
+												<div class="product-label discount">
+													<span>-15%</span>
+												</div>
+											</div>
+											<div class="product-action-link">
+												<div class="product-action-link">
+													<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+														 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="product-description text-center">
+											<div class="manufacturer">
+												<p><a href="product-details.html">Fashion Manufacturer</a></p>
+											</div>
+											<div class="product-name">
+												<h3><a href="product-details.html">Joust Duffle Bags</a></h3>
+											</div>
+											<div class="price-box">
+												<span class="regular-price">$100.00</span>
+												<span class="old-price"><del></del></span>
+											</div>
+											<div class="product-btn">
+												<a href="#"><i class="ion-bag"></i>Add to cart</a>
+											</div>
+											<div class="hover-box text-center">
+												<div class="ratings">
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item mb-20">
+										<div class="product-thumb">
+											<a href="product-details.html">
+												<img src="assets/img/product/product-4.jpg" alt="product image">
+											</a>
+											<div class="box-label">
+												<div class="product-label discount">
+													<span>-5%</span>
+												</div>
+											</div>
+											<div class="product-action-link">
+												<div class="product-action-link">
+													<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+														 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="product-description text-center">
+											<div class="manufacturer">
+												<p><a href="product-details.html">Fashion Manufacturer</a></p>
+											</div>
+											<div class="product-name">
+												<h3><a href="product-details.html">Chaz Kangeroo Hoodies</a></h3>
+											</div>
+											<div class="price-box">
+												<span class="regular-price">$90.00</span>
+												<span class="old-price"><del>$140.00</del></span>
+											</div>
+											<div class="product-btn">
+												<a href="#"><i class="ion-bag"></i>Add to cart</a>
+											</div>
+											<div class="hover-box text-center">
+												<div class="ratings">
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item mb-20">
+										<div class="product-thumb">
+											<a href="product-details.html">
+												<img src="assets/img/product/product-5.jpg" alt="product image">
+											</a>
+											<div class="box-label">
+												<div class="product-label new">
+													<span>new</span>
+												</div>
+											</div>
+											<div class="product-action-link">
+												<div class="product-action-link">
+													<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+														 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="product-description text-center">
+											<div class="manufacturer">
+												<p><a href="product-details.html">Fashion Manufacturer</a></p>
+											</div>
+											<div class="product-name">
+												<h3><a href="product-details.html">Compete Track Totes</a></h3>
+											</div>
+											<div class="price-box">
+												<span class="regular-price">$100.00</span>
+												<span class="old-price"><del></del></span>
+											</div>
+											<div class="product-btn">
+												<a href="#"><i class="ion-bag"></i>Add to cart</a>
+											</div>
+											<div class="hover-box text-center">
+												<div class="ratings">
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-item mb-20">
+										<div class="product-thumb">
+											<a href="product-details.html">
+												<img src="assets/img/product/product-6.jpg" alt="product image">
+											</a>
+											<div class="box-label">
+												<div class="product-label new">
+													<span>new</span>
+												</div>
+												<div class="product-label discount">
+													<span>-15%</span>
+												</div>
+											</div>
+											<div class="product-action-link">
+												<div class="product-action-link">
+													<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+														 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+													<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="product-description text-center">
+											<div class="manufacturer">
+												<p><a href="product-details.html">Fashion Manufacturer</a></p>
+											</div>
+											<div class="product-name">
+												<h3><a href="product-details.html">Driven Backpacks</a></h3>
+											</div>
+											<div class="price-box">
+												<span class="regular-price">$90.00</span>
+												<span class="old-price"><del>$70.00</del></span>
+											</div>
+											<div class="product-btn">
+												<a href="#"><i class="ion-bag"></i>Add to cart</a>
+											</div>
+											<div class="hover-box text-center">
+												<div class="ratings">
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+													<span><i class="fa fa-star"></i></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- featured product area end -->
+						</div>
+						<div class="col-lg-3">
+							<div class="sidebar-wrapper pt-md-16 pb-md-86 pb-sm-44">
+								<!-- single sidebar start -->
+								<div class="sidebar-single">
+									<div class="sidebar-title">
+										<h3>店铺</h3>
+									</div>
+									<div class="sidebar-body">
+										<ul class="sidebar-category">
+											<li><a href="#">时尚美妆</a>
+												<ul class="children">
+													<li><a href="#">精品女装</a></li>
+													<li><a href="#">surfboard</a></li>
+													<li><a href="#">accessories</a></li>
+												</ul>
+											</li>
+											<li><a href="#">精品女装</a>
+												<ul class="children">
+													<li><a href="#">Samsome</a></li>
+													<li><a href="#">GL Stylus</a></li>
+													<li><a href="#">Uawei</a></li>
+													<li><a href="#">Cherry Berry</a></li>
+												</ul>
+											</li>
+											<li><a href="#">高档首饰</a>
+												<ul class="children">
+													<li><a href="#">Power Bank</a></li>
+													<li><a href="#">Data Cable</a></li>
+													<li><a href="#">Power Cable</a></li>
+													<li><a href="#">Battery</a></li>
+												</ul>
+											</li>
+											<li><a href="#">潮流女包</a>
+												<ul class="children">
+													<li><a href="#">Desktop Headphone</a></li>
+													<li><a href="#">Mobile Headphone</a></li>
+													<li><a href="#">Wireless Headphone</a></li>
+													<li><a href="#">LED Headphone</a></li>
+												</ul>
+											</li>
+											<li><a href="#">女性配饰</a>
+												<ul class="children">
+													<li><a href="#">Desktop Headphone</a></li>
+													<li><a href="#">Mobile Headphone</a></li>
+													<li><a href="#">Wireless Headphone</a></li>
+													<li><a href="#">LED Headphone</a></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- single sidebar end -->
+
+								<!-- single sidebar start -->
+								<div class="sidebar-single">
+									<div class="sidebar-title">
+										<h3>类别</h3>
+									</div>
+									<div class="sidebar-body">
+										<ul class="price-container">
+											<li class="active">
+												<label class="checkbox-container">
+													健康 (10)
+													<input type="checkbox" name="checkbox">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-container">
+													美妆 (16)
+													<input type="checkbox" name="checkbox">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-container">
+													化妆 (10)
+													<input type="checkbox" name="checkbox">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="checkbox-container">
+													护肤 (9)
+													<input type="checkbox" name="checkbox">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- single sidebar end -->
+
+								<!-- single sidebar start -->
+								<div class="sidebar-single">
+									<div class="sidebar-title">
+										<h3>价钱</h3>
+									</div>
+									<div class="sidebar-body">
+										<ul class="price-container">
+											<li class="active">
+												<label class="radio-container">
+													$20.00 - $21.00
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="radio-container">
+													$26.00 - $30.00
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="radio-container">
+													$48.00 - $50.00
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="radio-container">
+													$100.00 - $200.00
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="radio-container">
+													$200.00 - $500.00
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- single sidebar end -->
+
+								<!-- single sidebar start -->
+								<div class="sidebar-single">
+									<div class="sidebar-title">
+										<h3>热门产品</h3>
+									</div>
+									<div class="sidebar-body">
+										<div class="popular-item-inner">
+											<div class="popular-item">
+												<div class="pop-item-thumb">
+													<a href="product-details.hrtml">
+														<img src="assets/img/product/product-6.jpg" alt="">
+													</a>
+												</div>
+												<div class="pop-item-des">
+													<h4><a href="product-details.html">乔木燕窝</a></h4>
+													<span class="pop-price">$50.00</span>
+												</div>
+											</div> <!-- end single popular item -->
+											<div class="popular-item">
+												<div class="pop-item-thumb">
+													<a href="product-details.hrtml">
+														<img src="assets/img/product/product-7.jpg" alt="">
+													</a>
+												</div>
+												<div class="pop-item-des">
+													<h4><a href="product-details.html">睫毛膏</a></h4>
+													<span class="pop-price">$60.00</span>
+												</div>
+											</div> <!-- end single popular item -->
+											<div class="popular-item">
+												<div class="pop-item-thumb">
+													<a href="product-details.hrtml">
+														<img src="assets/img/product/product-8.jpg" alt="">
+													</a>
+												</div>
+												<div class="pop-item-des">
+													<h4><a href="product-details.html">口红</a></h4>
+													<span class="pop-price">$100.00</span>
+												</div>
+											</div> <!-- end single popular item -->
+										</div>
+									</div>
+								</div>
+								<!-- single sidebar end -->
+
+								<!-- single sidebar start -->
+								<div class="sidebar-single">
+									<div class="advertising-thumb img-full fix">
+										<a href="#">
+											<img src="assets/img/banner/advertising.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<!-- single sidebar end -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- page main wrapper end -->
+
+		<!-- footer area start -->
+		<footer>
+			<script>
+				$("footer").load("footer.html");
+			</script>
+		</footer>
+		<!-- footer area end -->
+
+		<!-- Scroll to top start -->
+		<div class="scroll-top not-visible">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<!-- Scroll to Top End -->
+
+		<script src="assets/js/vendor/popper.min.js"></script>
+		<!-- Bootstrap Min Js -->
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<!-- Plugins Js-->
+		<script src="assets/js/plugins.js"></script>
+		<!-- Ajax Mail Js -->
+		<script src="assets/js/ajax-mail.js"></script>
+		<!-- Active Js -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/common.js"></script>
+	</body>
+
+</html>

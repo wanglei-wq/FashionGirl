@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="meta description">
+		<!-- Site title -->
+		<title>时尚丽人</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+		<!-- Bootstrap CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font-Awesome CSS -->
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<!-- IonIcon CSS -->
+		<link href="assets/css/ionicons.min.css" rel="stylesheet">
+		<!-- helper class css -->
+		<link href="assets/css/helper.min.css" rel="stylesheet">
+		<!-- Plugins CSS -->
+		<link href="assets/css/plugins.css" rel="stylesheet">
+		<!-- Main Style CSS -->
+		<link href="assets/css/style-blue.css" rel="stylesheet">
+		<!-- Jquery Min Js -->
+		<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+		<!-- header area start -->
+		<header>
+			<!-- main menu area start -->
+			<div class="header-main sticky">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class="logo">
+								<a href="index.html"> <img src="assets/img/logo/logo.png" alt="Brand logo">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 d-none d-lg-block">
+							<div class="main-header-inner">
+								<div class="main-menu">
+									<nav id="mobile-menu">
+										<ul>
+											<li class="active"><a href="#">购物<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="index.html">时尚美妆</a></li>
+													<li><a href="index-2.html">精品女装</a></li>
+													<li><a href="index-3.html">高档首饰</a></li>
+													<li><a href="index-4.html">潮流女包</a></li>
+												</ul>
+											</li>
+											<li class="static"><a href="#">服务<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="cart.html">购物车</a></li>
+													<li><a href="my-account.html">订单支付</a></li>
+													<li><a href="wishlist.html">愿望清单</a></li>
+													<li><a href="my-account.html">我的账户</a></li>
+												</ul>
+											</li>
+											<li><a href="#">淘货<i class="fa fa-angle-down"></i></a>
+												<ul class="dropdown">
+													<li><a href="shop-grid-left-sidebar.html">店铺---左侧栏</a></li>
+													<li><a href="shop-grid-right-sidebar.html">店铺---右侧栏</a></li>
+													<li><a href="shop-grid-full-width.html">店铺全宽</a></li>
+												</ul>
+											</li>
+											<li><a href="contact-us.html">联系我们</a></li>
+											<li><a href="about-us.html">关于我们</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-6 ml-auto">
+							<div class="header-setting-option">
+								<div class="search-wrap">
+									<button type="submit" class="search-trigger">
+										<i class="ion-ios-search-strong"></i>
+									</button>
+								</div>
+								<div class="header-mini-cart">
+									<div class="mini-cart-btn">
+										<i class="ion-bag"></i> <span class="cart-notification">2</span>
+									</div>
+									<ul class="cart-list">
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-1.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">simple product 09</a>
+												</h4>
+												<span>$60.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li>
+											<div class="cart-img">
+												<a href="product-details.html"><img src="assets/img/cart/cart-2.jpg" alt=""></a>
+											</div>
+											<div class="cart-info">
+												<h4>
+													<a href="product-details.html">virtual product 10</a>
+												</h4>
+												<span>$50.00</span>
+											</div>
+											<div class="del-icon">
+												<i class="fa fa-times"></i>
+											</div>
+										</li>
+										<li class="mini-cart-price"><span class="subtotal">subtotal
+												: </span> <span class="subtotal-price ml-auto">$110.00</span></li>
+										<li class="checkout-btn"><a href="#">checkout</a></li>
+									</ul>
+								</div>
+								<div class="settings-top">
+									<div class="settings-btn">
+										<i class="ion-android-settings"></i>
+									</div>
+									<ul class="settings-list">
+										<li><span id="nickname"></span><span id="faceid"> </span>---欢迎您！
+											<ul>
+												<li><a href="my-account.html">我的账户</a></li>
+												<li><a href="login.html">登录</a></li>
+												<li id="exit"><a href="login.html">退出</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 d-block d-lg-none">
+							<div class="mobile-menu">
+								<a href="#">
+									<li><span id="opt" style="color: #df1f26; font-weight: bold;"></span>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您！</li>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- main menu area end -->
+
+			<!-- Start Search Popup -->
+			<div class="box-search-content search_active block-bg close__top">
+				<form class="minisearch" action="#">
+					<div class="field__search">
+						<input type="text" placeholder="Search Our Catalog">
+						<div class="action">
+							<a href="#"><i class="fa fa-search"></i></a>
+							<img src="assets/img/huatong.png" width="50px" ;hheight="50px" />
+						</div>
+					</div>
+				</form>
+				<div class="close__wrap">
+					<span>close</span>
+				</div>
+			</div>
+			<!-- End Search Popup -->
+		</header>
+		<!-- header area end -->
+
+		<!-- slider area start -->
+		<div class="hero-area">
+			<div class="container">
+				<div class="hero-slider-active slider-arrow-style slick-dot-style hero-dot">
+					<div class="hero-single-slide hero-2 d-flex align-items-center" style="background-image: url(assets/img/slider/slide-3.jpg);">
+						<div class="slider-content text-center">
+							<h3>women's fashion</h3>
+							<h1>new collection 2018<br> with feminine</h1>
+							<a href="shop-grid-left-sidebar.html" class="slider-btn slider-btn__2">shop now</a>
+						</div>
+					</div>
+					<div class="hero-single-slide hero-2 d-flex align-items-center" style="background-image: url(assets/img/slider/slide-4.jpg);">
+						<div class="slider-content text-center ml-auto">
+							<h3>trending 2018</h3>
+							<h1>cover up!<br>winter is coming</h1>
+							<a href="shop-grid-left-sidebar.html" class="slider-btn slider-btn__2">shop now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider area end -->
+
+		<!-- banner statistics 01 start -->
+		<div class="banner-statistic-one pt-30">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="img-container img-full fix mb-sm-30">
+							<a href="#">
+								<img src="assets/img/banner/cms_2.1.jpg" alt="banner image">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="img-container img-full fix mb-sm-30">
+							<a href="#">
+								<img src="assets/img/banner/cms_2.2.jpg" alt="banner image">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="img-container img-full fix mb-sm-30">
+							<a href="#">
+								<img src="assets/img/banner/cms_2.3.jpg" alt="banner image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner statistics 01 end -->
+
+		<!-- featured product area start -->
+		<div class="page-section pt-100 pb-14 pt-sm-30 pb-sm-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title text-center pb-44">
+							<p>最新特色产品</p>
+							<h2>特色产品</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- featured product area end -->
+
+		<!-- banner feature start -->
+		<div class="banner-feature-area bg-navy-blue pt-62 pb-60 pt-sm-56 pb-sm-20">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="banner-single-feature text-center mb-sm-30">
+							<i class="ion-paper-airplane"></i>
+							<h4>免费送货</h4>
+							<p>我们是化妆品在线零售商之一，提供免费送货服务</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="banner-single-feature text-center mb-sm-30">
+							<i class="ion-ios-time-outline"></i>
+							<h4>365天家庭试用</h4>
+							<p>我们独特的退货政策，将使您退货的化妆品期限将近一年</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="banner-single-feature text-center mb-sm-30">
+							<i class="ion-trophy"></i>
+							<h4>售后服务</h4>
+							<p>与我们一起购买化妆品，我们会提供最顶级的售后服务！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner feature end -->
+
+		<!-- feature category area start -->
+		<div class="feature-category-vertical pt-100 pb-14 pt-sm-54 pb-sm-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title text-center pb-44">
+							<p>最受欢迎的产品类别</p>
+							<h2>最受欢迎的项目</h2>
+						</div>
+						<div id="index2" class="row product-carousel-one spt slick-arrow-style">
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid1" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img1">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-5%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+												 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+											<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+											<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname1"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname3"></span>
+											<span class="old-price"><del id="pname2"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid2" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img2">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname4"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname6"></span>
+											<span class="old-price"><del id="pname5"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid3" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img3">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname7"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname9"></span>
+											<span class="old-price"><del id="pname8"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid4" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img4">
+										</a>
+										<div class="box-label">
+											<div class="product-label discount">
+												<span>-5%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname10"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname12"></span>
+											<span class="old-price"><del id="pname11"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid5" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img5">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname13"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname15"></span>
+											<span class="old-price"><del id="pname14"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid6" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img6">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname16"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname18"></span>
+											<span class="old-price"><del id="pname17"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid7" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img7">
+										</a>
+										<div class="box-label">
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html">
+													<span id="pname19"></span>
+												</a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname21"></span>
+											<span class="old-price"><del id="pname20"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid8" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img8">
+										</a>
+										<div class="box-label">
+											<div class="product-label discount">
+												<span>-25%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html" id="pname22"></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname24"></span>
+											<span class="old-price"><del id="pname23"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid9" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img9">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname25"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname27"></span>
+											<span class="old-price"><del id="pname26"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid10" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img10">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname28"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname30"></span>
+											<span class="old-price"><del id="pname29"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid11" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img11">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname31"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname33"></span>
+											<span class="old-price"><del id="pname32"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid12" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img12">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname34"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname36"></span>
+											<span class="old-price"><del id="pname35"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid13" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img13">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname37"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname39"></span>
+											<span class="old-price"><del id="pname38"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid14" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img14">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname40"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname42"></span>
+											<span class="old-price"><del id="pname41"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="product-item mb-20">
+									<div class="product-thumb">
+										<a href="product-details.html">
+											<span id="pid15" hidden="hidden"></span>
+											<img style="width: 360px;height: 420px;" src="" alt="product image" id="img15">
+										</a>
+										<div class="box-label">
+											<div class="product-label new">
+												<span>new</span>
+											</div>
+											<div class="product-label discount">
+												<span>-15%</span>
+											</div>
+										</div>
+										<div class="product-action-link">
+											<div class="product-action-link">
+												<a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left"
+													 title="Quick view"><i class="ion-ios-eye-outline"></i></span> </a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="ion-ios-loop"></i></a>
+												<a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="ion-ios-shuffle"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="product-description text-center">
+										<div class="manufacturer">
+											<p><a href="product-details.html">Fashion Manufacturer</a></p>
+										</div>
+										<div class="product-name">
+											<h3><a href="product-details.html"><span id="pname43"></span></a></h3>
+										</div>
+										<div class="price-box">
+											<span class="regular-price" id="pname45"></span>
+											<span class="old-price"><del id="pname44"></del></span>
+										</div>
+										<div class="product-btn">
+											<a href="#"><i class="ion-bag"></i>Add to cart</a>
+										</div>
+										<div class="hover-box text-center">
+											<div class="ratings">
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+												<span><i class="fa fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- feature category area end -->
+		
+		<!-- banner statistics 02 start -->
+		<div class="banner-statistic-two">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="banner-content-inner overlay banner-2">
+							<div class="banner-content banner-content__2 text-center">
+								<p>找出</p>
+								<h2>完美的着装</h2>
+								<p>这个神圣的季节</p>
+								<a href="#" class="sqr-btn">查看详情</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner statistics 02 end -->
+
+
+		<!-- latest blog area start -->
+		<div class="latest-blog-area pt-100 pb-90 pt-sm-58 pb-sm-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title text-center pb-44">
+							<p>新的博客</p>
+							<h2>来自博客</h2>
+						</div>
+					</div>
+				</div>
+				<div class="blog-carousel-active row slick-arrow-style">
+					<div class="col">
+						<div class="blog-item">
+							<article class="blog-post">
+								<div class="blog-post-content">
+									<div class="blog-top">
+										<div class="post-date-time">
+											<span>10 December,18 </span>
+										</div>
+										<div class="post-blog-meta">
+											<p>post by HasTech</p>
+										</div>
+									</div>
+									<div class="blog-thumb img-full">
+										<a href="blog-details.html">
+											<img src="assets/img/blog/blog-1.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="blog-content">
+									<h4><a href="blog-details.html">This is Secound Post For XipBlog</a></h4>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+										standard ever since the ...
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col">
+						<div class="blog-item">
+							<article class="blog-post">
+								<div class="blog-post-content">
+									<div class="blog-top">
+										<div class="post-date-time">
+											<span>10 December,18 </span>
+										</div>
+										<div class="post-blog-meta">
+											<p>post by HasTech</p>
+										</div>
+									</div>
+									<div class="blog-thumb img-full">
+										<a href="blog-details.html">
+											<img src="assets/img/blog/blog-2.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="blog-content">
+									<h4><a href="blog-details.html">This is Secound Post For XipBlog</a></h4>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+										standard ever since the ...
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col">
+						<div class="blog-item">
+							<article class="blog-post">
+								<div class="blog-post-content">
+									<div class="blog-top">
+										<div class="post-date-time">
+											<span>10 December,18 </span>
+										</div>
+										<div class="post-blog-meta">
+											<p>post by HasTech</p>
+										</div>
+									</div>
+									<div class="blog-thumb img-full">
+										<a href="blog-details.html">
+											<img src="assets/img/blog/blog-3.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="blog-content">
+									<h4><a href="blog-details.html">This is Secound Post For XipBlog</a></h4>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+										standard ever since the ...
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col">
+						<div class="blog-item">
+							<article class="blog-post">
+								<div class="blog-post-content">
+									<div class="blog-top">
+										<div class="post-date-time">
+											<span>10 December,18 </span>
+										</div>
+										<div class="post-blog-meta">
+											<p>post by HasTech</p>
+										</div>
+									</div>
+									<div class="blog-thumb img-full">
+										<a href="blog-details.html">
+											<img src="assets/img/blog/blog-4.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="blog-content">
+									<h4><a href="blog-details.html">This is Secound Post For XipBlog</a></h4>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+										standard ever since the ...
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col">
+						<div class="blog-item">
+							<article class="blog-post">
+								<div class="blog-post-content">
+									<div class="blog-top">
+										<div class="post-date-time">
+											<span>10 December,18 </span>
+										</div>
+										<div class="post-blog-meta">
+											<p>post by HasTech</p>
+										</div>
+									</div>
+									<div class="blog-thumb img-full">
+										<a href="blog-details.html">
+											<img src="assets/img/blog/blog-2.jpg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="blog-content">
+									<h4><a href="blog-details.html">This is Secound Post For XipBlog</a></h4>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys
+										standard ever since the ...
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- latest blog area end -->
+
+
+		<!-- footer area start -->
+		<footer>
+			<script>
+				$("footer").load("footer.html");
+			</script>
+		</footer>
+		<!-- footer area end -->
+
+		<!-- Scroll to top start -->
+		<div class="scroll-top not-visible">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<!-- Scroll to Top End -->
+
+		<!--All jQuery, Third Party Plugins & Activation (main.js) Files-->
+		<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+		<!-- Popper Min Js -->
+		<script src="assets/js/vendor/popper.min.js"></script>
+		<!-- Bootstrap Min Js -->
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<!-- Plugins Js-->
+		<script src="assets/js/plugins.js"></script>
+		<!-- Ajax Mail Js -->
+		<script src="assets/js/ajax-mail.js"></script>
+		<!-- Active Js -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/common.js"></script>
+		<script src="assets/js/index-2.js"></script>
+	</body>
+
+</html>
